@@ -22,10 +22,12 @@ body {
         size: $font-size;
     };
 }
+
 img {
     max-width: 100%;
     height: auto;
 }
+
 a {
     text-decoration: none;
     transition: $transition;
@@ -34,9 +36,11 @@ a {
         text-decoration: none;
     }
 }
+
 :focus {
     outline: 0 !important;
 }
+
 .d-table {
     width: 100%;
     height: 100%;
@@ -45,9 +49,11 @@ a {
         vertical-align: middle;
     }
 }
+
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     font-family: $font-family2;
 }
+
 p {
     line-height: 1.8;
     font-size: $font-size;
@@ -56,41 +62,49 @@ p {
         margin-bottom: 0;
     }
 }
+
 .bg-0f1d22 {
     background-color: #0f1d22;
 }
+
 .ptb-120 {
     padding: {
         top: 120px;
         bottom: 120px;
     };
 }
+
 .pt-120 {
     padding: {
         top: 120px;
     };
 }
+
 .pb-120 {
     padding: {
         bottom: 120px;
     };
 }
+
 .ptb-90 {
     padding: {
         top: 90px;
         bottom: 90px;
     };
 }
+
 .pt-90 {
     padding: {
         top: 90px;
     };
 }
+
 .pb-90 {
     padding: {
         bottom: 90px;
     };
 }
+
 /*default-btn*/
 .default-btn {
     display: inline-block;
@@ -107,6 +121,7 @@ p {
         size: 14px;
         weight: 300;
     };
+
     &::before {
         content: '';
         position: absolute;
@@ -119,6 +134,7 @@ p {
         transition: $transition;
         transform: scaleX(0);
     }
+
     &::after {
         content: '';
         position: absolute;
@@ -131,18 +147,21 @@ p {
         transition: $transition;
         animation: opacityChange 2s linear 2s infinite;
     }
+
     &:hover {
         color: $white-color;
-        
+
         &::before {
             transform: scaleX(1);
         }
+
         &::after {
             border-color: $main-color;
             opacity: 1 !important;
         }
     }
 }
+
 /*section-title*/
 .section-title {
     margin-bottom: 50px;
@@ -157,6 +176,7 @@ p {
             weight: 600;
         };
     }
+
     h2 {
         color: $white-color;
         max-width: 635px;
@@ -171,6 +191,7 @@ p {
         };
     }
 }
+
 /*form-control*/
 .form-control {
     border-radius: 0;
@@ -187,6 +208,7 @@ p {
         color: #a7a6a6;
         transition: $transition;
     }
+
     &:focus {
         background-color: #0c252b;
 
@@ -195,6 +217,7 @@ p {
         }
     }
 }
+
 textarea.form-control {
     height: auto !important;
     padding-top: 15px;
@@ -226,10 +249,12 @@ Preloader CSS
             left: auto;
             right: auto;
         };
+
         .wrapper {
             height: 50px;
             width: 180px;
         }
+
         .circle {
             border-radius: 50%;
             border: 3px solid $white-color;
@@ -238,23 +263,29 @@ Preloader CSS
             margin: 0 5px;
             width: 50px;
         }
+
         .circle-1 {
             animation: move 1s ease-in-out infinite;
         }
+
         .circle-1a {
             animation: fade 1s ease-in-out infinite;
         }
+
         .circle-2 {
             animation: move 1s ease-in-out infinite;
         }
+
         .circle-1a {
             margin-left: -55px;
             opacity: 0;
         }
+
         .circle-3 {
             animation: circle-3 1s ease-in-out infinite;
             opacity: 1;
         }
+
         span {
             color: $white-color;
             letter-spacing: 0.05em;
@@ -272,6 +303,7 @@ Preloader CSS
         }
     }
 }
+
 .preloader-area {
     position: fixed;
     left: 0;
@@ -294,6 +326,7 @@ Preloader CSS
         height: 50px;
         transition: $transition;
     }
+
     .box {
         width: 100%;
         height: 100%;
@@ -303,7 +336,8 @@ Preloader CSS
         top: 0;
         left: 0;
     }
-    .shadow { 
+
+    .shadow {
         width: 100%;
         height: 5px;
         background: #000000;
@@ -314,6 +348,7 @@ Preloader CSS
         border-radius: 50%;
         animation: shadow .5s linear infinite;
     }
+
     &::before, &::after {
         content: '';
         position: absolute;
@@ -325,22 +360,26 @@ Preloader CSS
         background: $dark-blue-color;
         transition: .9s;
     }
+
     &::after {
         left: auto;
         right: 0;
     }
+
     &.preloader-deactivate {
         visibility: hidden;
 
         &::after, &::before {
             width: 0;
         }
+
         .loader {
             opacity: 0;
             visibility: hidden;
         }
     }
 }
+
 @keyframes fade {
     0% {
         opacity: 0;
@@ -349,6 +388,7 @@ Preloader CSS
         opacity: 1;
     }
 }
+
 @keyframes move {
     0% {
         transform: translateX(0);
@@ -357,6 +397,7 @@ Preloader CSS
         transform: translateX(60px);
     }
 }
+
 @keyframes circle-3 {
     0% {
         opacity: 1;
@@ -365,6 +406,7 @@ Preloader CSS
         opacity: 0;
     }
 }
+
 @keyframes loader {
     0% {
         left: -100px
@@ -373,6 +415,7 @@ Preloader CSS
         left: 110%;
     }
 }
+
 @keyframes animate {
     17% {
         border-bottom-right-radius: 3px;
@@ -381,7 +424,7 @@ Preloader CSS
         transform: translateY(9px) rotate(22.5deg);
     }
     50% {
-        transform: translateY(18px) scale(1,.9) rotate(45deg);
+        transform: translateY(18px) scale(1, .9) rotate(45deg);
         border-bottom-right-radius: 40px;
     }
     75% {
@@ -391,9 +434,10 @@ Preloader CSS
         transform: translateY(0) rotate(90deg);
     }
 }
+
 @keyframes shadow {
     50% {
-        transform: scale(1.2,1);
+        transform: scale(1.2, 1);
     }
 }
 
@@ -414,9 +458,11 @@ Navbar CSS
         left: 0;
         right: 0;
     };
+
     &.bg-light {
         background-color: transparent !important;
     }
+
     &.navbar-light {
         .navbar-nav {
             margin-left: auto;
@@ -436,6 +482,7 @@ Navbar CSS
                         left: 15px;
                         right: 15px;
                     };
+
                     &::before {
                         content: '';
                         position: absolute;
@@ -448,6 +495,7 @@ Navbar CSS
                         transform: scaleX(0);
                         visibility: hidden;
                     }
+
                     &:hover, &.active {
                         &::before {
                             opacity: 1;
@@ -456,11 +504,13 @@ Navbar CSS
                         }
                     }
                 }
+
                 &:last-child {
                     .nav-link {
                         margin-right: 0;
                     }
                 }
+
                 &:first-child {
                     .nav-link {
                         margin-left: 0;
@@ -468,10 +518,12 @@ Navbar CSS
                 }
             }
         }
+
         .others-option {
             margin-left: 30px;
         }
     }
+
     &.is-sticky {
         position: fixed;
         top: 0;
@@ -485,12 +537,14 @@ Navbar CSS
             bottom: 18px;
         };
     }
+
     &.navbar-style-two {
         background-color: rgba(0, 0, 0, .40) !important;
         padding: {
             top: 18px;
             bottom: 18px;
         };
+
         &.is-sticky {
             background-color: #000000 !important;
             padding: {
@@ -499,6 +553,7 @@ Navbar CSS
             };
         }
     }
+
     &.navbar-style-three {
         opacity: 0;
         visibility: hidden;
@@ -508,15 +563,18 @@ Navbar CSS
             visibility: visible;
         }
     }
+
     &.headroom--pinned {
         transform: translateY(0%);
     }
+
     &.headroom--unpinned {
         transform: translateY(-100%);
     }
 }
+
 @media only screen and (max-width: 991px) {
-    
+
     .navbar {
         padding-top: 15px;
 
@@ -526,6 +584,7 @@ Navbar CSS
                 right: 15px !important;
             };
         }
+
         &.navbar-light {
             .navbar-toggler {
                 border-color: $white-color;
@@ -535,11 +594,12 @@ Navbar CSS
                     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
                 }
             }
+
             .navbar-nav {
                 background-color: $black-color;
                 padding: 12px 20px 10px;
                 margin-top: 15px;
-                
+
                 .nav-item {
                     .nav-link {
                         padding: 0 0 5px;
@@ -555,6 +615,7 @@ Navbar CSS
                     }
                 }
             }
+
             .others-option {
                 background-color: $black-color;
                 margin-left: 0;
@@ -565,6 +626,7 @@ Navbar CSS
                 };
             }
         }
+
         &.is-sticky {
             padding: {
                 top: 10px;
@@ -572,7 +634,7 @@ Navbar CSS
             };
         }
     }
-    
+
 }
 
 /*================================================
@@ -581,6 +643,7 @@ Main Container CSS
 .main-content {
     position: relative;
 }
+
 .main-container {
     padding-left: 340px;
     transition: $transition;
@@ -593,6 +656,7 @@ Main Container CSS
             visibility: hidden;
         }
     }
+
     &.active-main-container {
         padding-left: 0;
 
@@ -608,6 +672,7 @@ Main Container CSS
         }
     }
 }
+
 .placid-aside {
     position: fixed;
     left: 0;
@@ -629,6 +694,7 @@ Main Container CSS
             display: inline-block;
         }
     }
+
     .navbar-nav {
         padding-left: 0;
         list-style-type: none;
@@ -636,6 +702,7 @@ Main Container CSS
             top: -25px;
             bottom: 0;
         };
+
         li {
             margin-bottom: 30px;
             display: block;
@@ -651,6 +718,7 @@ Main Container CSS
                     size: 15px;
                     weight: 300;
                 };
+
                 &::before {
                     content: '';
                     position: absolute;
@@ -663,6 +731,7 @@ Main Container CSS
                     transform: scaleX(0);
                     visibility: hidden;
                 }
+
                 &:hover, &.active {
                     &::before {
                         opacity: 1;
@@ -671,15 +740,18 @@ Main Container CSS
                     }
                 }
             }
+
             &:last-child {
                 margin-bottom: 0;
             }
         }
+
         &.navbar-style-two {
             margin: {
                 left: -20px;
                 right: -20px;
             };
+
             li {
                 position: relative;
                 margin-bottom: 20px;
@@ -693,15 +765,18 @@ Main Container CSS
                     border: 1px dashed rgba(255, 255, 255, .1);
                     width: 100%;
                 }
+
                 a {
                     background-color: $dark-blue-color;
                     padding: {
                         left: 10px;
                         right: 10px;
                     };
+
                     &::before {
                         display: none;
                     }
+
                     &:hover, &.active {
                         color: $main-color;
                     }
@@ -709,6 +784,7 @@ Main Container CSS
             }
         }
     }
+
     .aside-footer {
         position: absolute;
         bottom: 50px;
@@ -722,12 +798,14 @@ Main Container CSS
                 top: 25px;
                 bottom: 0;
             };
+
             li {
                 display: inline-block;
                 margin: {
                     left: 5px;
                     right: 5px;
                 };
+
                 a {
                     display: block;
                     font-size: 22px;
@@ -740,6 +818,7 @@ Main Container CSS
             }
         }
     }
+
     .line {
         position: absolute;
         width: 1px;
@@ -763,6 +842,7 @@ Main Container CSS
             animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
         }
     }
+
     .line2 {
         position: absolute;
         width: 1px;
@@ -786,6 +866,7 @@ Main Container CSS
             animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
         }
     }
+
     .aside-show-hide {
         position: absolute;
         left: 25px;
@@ -803,6 +884,7 @@ Main Container CSS
             opacity: 0.8;
         }
     }
+
     &:hover {
         .aside-show-hide {
             opacity: 1;
@@ -811,6 +893,7 @@ Main Container CSS
         }
     }
 }
+
 .responsive-burger-menu {
     display: none;
     cursor: pointer;
@@ -827,6 +910,7 @@ Main Container CSS
         top: 12px;
         left: 12px;
     };
+
     span {
         height: 2px;
         width: 25px;
@@ -835,6 +919,7 @@ Main Container CSS
         margin: 5px 0;
         transition: all .50s ease-in-out;
     }
+
     &.active {
         padding-left: 16px;
 
@@ -843,9 +928,11 @@ Main Container CSS
                 transform: rotate(45deg);
                 transform-origin: 10% 10%;
             }
+
             &.middle-bar {
                 opacity: 0;
             }
+
             &.bottom-bar {
                 transform: rotate(-45deg);
                 transform-origin: 10% 90%;
@@ -854,6 +941,7 @@ Main Container CSS
         }
     }
 }
+
 .video-background {
     position: absolute;
     left: -70%;
@@ -864,6 +952,7 @@ Main Container CSS
     min-width: 100%;
     z-index: -2;
 }
+
 .video-banner {
     overflow: hidden;
 
@@ -878,6 +967,7 @@ Main Container CSS
         background: rgba(13, 15, 20, 0.55);
     }
 }
+
 .water-ripple {
     canvas {
         position: absolute;
@@ -886,6 +976,7 @@ Main Container CSS
         z-index: -1;
     }
 }
+
 #particles-js {
     position: absolute;
     top: 0;
@@ -894,6 +985,7 @@ Main Container CSS
     width: 100%;
     height: 100%;
 }
+
 @keyframes run2 {
     0% {
         top: -50%;
@@ -902,6 +994,7 @@ Main Container CSS
         top: 110%;
     }
 }
+
 @keyframes run3 {
     0% {
         bottom: -50%;
@@ -923,73 +1016,87 @@ Main Banner CSS
         size: cover;
         repeat: no-repeat;
     };
+
     &.banner-bg1 {
         background: {
-            image: url(assets/img/main-banner1.jpg);
+            image: url(assets/img/Me/AmrMossad-Large.jpeg);
         };
     }
+
     &.banner-bg2 {
         background: {
             image: url(assets/img/main-banner2.jpg);
         };
     }
+
     &.banner-bg3 {
         background: {
             image: url(assets/img/main-banner3.jpg);
         };
     }
+
     &.banner-bg4 {
         background: {
             image: url(assets/img/main-banner4.jpg);
         };
     }
+
     &.banner-bg5 {
         background: {
             image: url(assets/img/main-banner5.jpg);
         };
     }
+
     &.banner-bg6 {
         background: {
             image: url(assets/img/main-banner6.jpg);
         };
     }
+
     &.banner-bg7 {
         background: {
             image: url(assets/img/main-banner7.jpg);
         };
     }
+
     &.banner-bg8 {
         background: {
             image: url(assets/img/main-banner8.jpg);
         };
     }
+
     &.banner-bg9 {
         background: {
             image: url(assets/img/main-banner9.jpg);
         };
     }
+
     &.banner-bg10 {
         background: {
             image: url(assets/img/main-banner10.jpg);
         };
     }
+
     &.banner-bg11 {
         background: {
             image: url(assets/img/main-banner11.jpg);
         };
     }
+
     &.banner-bg12 {
         background: {
             image: url(assets/img/main-banner12.jpg);
         };
     }
 }
+
 .main-banner-content {
     text-align: center;
     margin: {
         left: auto;
         right: auto;
     };
+
     .sub-title {
         display: block;
         color: $white-color;
@@ -999,6 +1106,7 @@ Main Banner CSS
             size: 24px;
         };
     }
+
     h1 {
         color: $white-color;
         margin-bottom: -10px;
@@ -1009,6 +1117,7 @@ Main Banner CSS
             family: $font-family3;
         };
     }
+
     h6 {
         color: $white-color;
         margin-bottom: 0;
@@ -1017,20 +1126,23 @@ Main Banner CSS
             weight: 600;
             family: $font-family1;
         };
+
         span {
             display: inline-block;
             color: $main-color;
         }
     }
 }
+
 .banner-section {
     position: relative;
     z-index: 1;
     padding-top: 100px;
     background-color: $dark-blue-color;
 }
+
 .banner-content {
-    
+
     .sub-title {
         display: block;
         color: $white-color;
@@ -1040,6 +1152,7 @@ Main Banner CSS
             size: 24px;
         };
     }
+
     h1 {
         color: $white-color;
         margin-bottom: 28px;
@@ -1049,6 +1162,7 @@ Main Banner CSS
             weight: 700;
         };
     }
+
     h6 {
         color: $white-color;
         margin-bottom: 0;
@@ -1057,11 +1171,13 @@ Main Banner CSS
             weight: 600;
             family: $font-family1;
         };
+
         span {
             display: inline-block;
             color: $main-color;
         }
     }
+
     .social {
         padding-left: 0;
         list-style-type: none;
@@ -1069,11 +1185,13 @@ Main Banner CSS
             top: 25px;
             bottom: 0;
         };
+
         li {
             display: inline-block;
             margin: {
                 right: 6px;
             };
+
             a {
                 display: block;
                 font-size: 22px;
@@ -1083,12 +1201,14 @@ Main Banner CSS
                     color: $main-color;
                 }
             }
+
             &:last-child {
                 margin-right: 0;
             }
         }
     }
 }
+
 .home-banner-content {
     overflow: hidden;
     max-width: 720px;
@@ -1104,6 +1224,7 @@ Main Banner CSS
             size: 65px;
             weight: 700;
         };
+
         &:after {
             content: attr(data-shadow);
             position: absolute;
@@ -1111,24 +1232,28 @@ Main Banner CSS
             left: .06em;
             z-index: -1;
             text-shadow: none;
-            background-image: linear-gradient(45deg, transparent 45%, hsla(48, 20%, 90%,1) 45%,hsla(48, 20%, 90%, 1) 55%, transparent 0);
+            background-image: linear-gradient(45deg, transparent 45%, hsla(48, 20%, 90%, 1) 45%, hsla(48, 20%, 90%, 1) 55%, transparent 0);
             background-size: .05em .05em;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             animation: shad-anim 50s linear infinite;
         }
     }
+
     p {
         color: $white-color;
         opacity: 0.80;
     }
+
     .default-btn {
         margin-top: 15px;
     }
 }
+
 .banner-image {
     text-align: center;
 }
+
 .hero-content {
     h1 {
         color: $white-color;
@@ -1140,6 +1265,7 @@ Main Banner CSS
         };
     }
 }
+
 .home-area {
     position: relative;
     z-index: 1;
@@ -1148,9 +1274,11 @@ Main Banner CSS
     .scroll-btn {
         z-index: 2;
     }
+
     .lines {
         z-index: 1;
     }
+
     .banner-content {
         position: absolute;
         text-align: left;
@@ -1164,6 +1292,7 @@ Main Banner CSS
             line-height: 1.1;
         }
     }
+
     .hero-content {
         bottom: 30px;
         position: absolute;
@@ -1171,6 +1300,7 @@ Main Banner CSS
         left: 3%;
         max-width: 720px;
     }
+
     &.home-area-two {
         .banner-content {
             left: 13.4%;
@@ -1179,6 +1309,7 @@ Main Banner CSS
         }
     }
 }
+
 .home-content {
     .sub-title {
         display: block;
@@ -1191,6 +1322,7 @@ Main Banner CSS
             size: $font-size;
         };
     }
+
     h1 {
         color: $black-color;
         margin-bottom: 25px;
@@ -1199,6 +1331,7 @@ Main Banner CSS
             size: 110px;
             weight: 900;
         };
+
         span {
             display: block;
             font: {
@@ -1207,6 +1340,7 @@ Main Banner CSS
             };
         }
     }
+
     p {
         color: $black-color;
         margin-bottom: 0;
@@ -1216,6 +1350,7 @@ Main Banner CSS
             weight: 500;
         };
     }
+
     .social {
         padding-left: 0;
         list-style-type: none;
@@ -1223,11 +1358,13 @@ Main Banner CSS
             top: 20px;
             bottom: 0;
         };
+
         li {
             display: inline-block;
             margin: {
                 right: 10px;
             };
+
             a {
                 display: block;
                 font-size: 22px;
@@ -1237,23 +1374,26 @@ Main Banner CSS
                     color: $main-color;
                 }
             }
+
             &:last-child {
                 margin-right: 0;
             }
         }
     }
 }
+
 .scroll-btn {
-	display: block;
-	position: absolute;
-	left: 0;
-	right: 0;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
     text-align: center;
     bottom: 30px;
 
     > * {
         display: inline-block;
     }
+
     .mouse {
         position: relative;
         display: block;
@@ -1265,6 +1405,7 @@ Main Banner CSS
             left: auto;
             right: auto;
         };
+
         > * {
             position: absolute;
             display: block;
@@ -1279,6 +1420,7 @@ Main Banner CSS
         }
     }
 }
+
 @keyframes ani-mouse {
     0% {
         opacity: 1;
@@ -1297,6 +1439,7 @@ Main Banner CSS
         top: 28%;
     }
 }
+
 .lines {
     position: absolute;
     top: 0;
@@ -1328,17 +1471,21 @@ Main Banner CSS
             animation-fill-mode: forwards;
             animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
         }
+
         &:nth-child(1) {
             margin-left: -25%;
         }
+
         &:nth-child(1) {
             &::after {
                 animation-delay: 2s;
             }
         }
+
         &:nth-child(3) {
             margin-left: 25%;
         }
+
         &:nth-child(3) {
             &::after {
                 animation-delay: 2.5s;
@@ -1346,6 +1493,7 @@ Main Banner CSS
         }
     }
 }
+
 @keyframes shad-anim {
     0% {
         background-position: 0 0
@@ -1354,6 +1502,7 @@ Main Banner CSS
         background-position: 100% -100%
     }
 }
+
 .home-slides-two {
     &.owl-theme {
         .owl-dots {
@@ -1371,11 +1520,13 @@ Main Banner CSS
                     padding: 0;
                     transition: $transition;
                 }
+
                 &:hover {
                     span {
                         background-color: $main-color;
                     }
                 }
+
                 &.active {
                     span {
                         height: 25px;
@@ -1384,6 +1535,7 @@ Main Banner CSS
                 }
             }
         }
+
         .owl-nav {
             margin-top: 0;
             position: absolute;
@@ -1410,11 +1562,13 @@ Main Banner CSS
                     top: 50%;
                     transform: translateY(-50%);
                 }
+
                 &:hover {
                     border-color: $main-color;
                     color: $white-color;
                     background-color: $main-color;
                 }
+
                 &.owl-next {
                     border-right-width: 0;
                 }
@@ -1434,6 +1588,7 @@ About CSS
         margin-bottom: 0;
         line-height: 1.9;
     }
+
     .about-list-tab {
         margin-top: 20px;
 
@@ -1455,9 +1610,11 @@ About CSS
                     size: 16px;
                     weight: 500;
                 };
+
                 &:last-child {
                     margin-right: 0;
                 }
+
                 &::before {
                     content: '';
                     position: absolute;
@@ -1468,6 +1625,7 @@ About CSS
                     background-color: $white-color;
                     transition: $transition;
                 }
+
                 &:hover, &.current {
                     color: $main-color;
 
@@ -1478,6 +1636,7 @@ About CSS
                 }
             }
         }
+
         .tab-content {
             .tabs-item {
                 .skills-area {
@@ -1501,6 +1660,7 @@ About CSS
                                     family: $font-family1;
                                 };
                             }
+
                             .skills-percentage {
                                 position: absolute;
                                 right: 0;
@@ -1512,6 +1672,7 @@ About CSS
                                 };
                             }
                         }
+
                         .skills-bar {
                             position: relative;
                             width: 100%;
@@ -1524,6 +1685,7 @@ About CSS
                                     top: 2px solid #364d55;
                                     bottom: 2px solid #364d55;
                                 };
+
                                 .bar {
                                     position: absolute;
                                     left: 0;
@@ -1539,6 +1701,7 @@ About CSS
                         }
                     }
                 }
+
                 .awards-area {
                     margin-bottom: -25px;
 
@@ -1547,6 +1710,7 @@ About CSS
                         text-align: center;
                     }
                 }
+
                 .experience-area {
                     margin-bottom: -25px;
 
@@ -1563,6 +1727,7 @@ About CSS
                                 weight: 600;
                             };
                         }
+
                         h3 {
                             color: $white-color;
                             margin-bottom: 12px;
@@ -1571,6 +1736,7 @@ About CSS
                                 weight: 600;
                             };
                         }
+
                         p {
                             font-size: 15px;
                             line-height: 1.8;
@@ -1578,6 +1744,7 @@ About CSS
                         }
                     }
                 }
+
                 .education-area {
                     margin-bottom: -25px;
 
@@ -1594,6 +1761,7 @@ About CSS
                                 weight: 600;
                             };
                         }
+
                         h3 {
                             margin-bottom: 12px;
                             color: $white-color;
@@ -1602,6 +1770,7 @@ About CSS
                                 weight: 600;
                             };
                         }
+
                         p {
                             font-size: 15px;
                             line-height: 1.8;
@@ -1609,6 +1778,7 @@ About CSS
                         }
                     }
                 }
+
                 .certification-area {
                     margin-bottom: -25px;
 
@@ -1620,6 +1790,7 @@ About CSS
             }
         }
     }
+
     .features-text {
         margin-top: 25px;
 
@@ -1630,6 +1801,7 @@ About CSS
                 size: 18px;
                 weight: 700;
             };
+
             i {
                 font-size: 18px;
                 margin-right: 4px;
@@ -1638,14 +1810,17 @@ About CSS
                 top: 2px;
             }
         }
+
         p {
             opacity: 0.90;
         }
     }
+
     .default-btn {
         margin-top: 25px;
     }
 }
+
 .tab {
     .tabs-item {
         display: none;
@@ -1655,6 +1830,7 @@ About CSS
         }
     }
 }
+
 .about-image {
     text-align: center;
     position: relative;
@@ -1664,6 +1840,7 @@ About CSS
         right: 25px;
         bottom: 25px;
     };
+
     &::before {
         content: '';
         position: absolute;
@@ -1681,12 +1858,13 @@ About CSS
         };
     }
 }
+
 .about-list-tab-2 {
     background-color: $black-color;
 
     .tabs-list {
         background-color: #1b2d34;
-        
+
         .tabs {
             padding-left: 0;
             margin-bottom: 0;
@@ -1706,6 +1884,7 @@ About CSS
                     size: 16px;
                     weight: 500;
                 };
+
                 &::before {
                     content: '';
                     position: absolute;
@@ -1716,11 +1895,13 @@ About CSS
                     background-color: rgba(255, 255, 255, .1);
                     transition: $transition;
                 }
+
                 &:last-child {
                     &::before {
                         display: none;
                     }
                 }
+
                 &:hover, &.current {
                     background-color: $main-color;
                     color: $white-color;
@@ -1732,6 +1913,7 @@ About CSS
             }
         }
     }
+
     .tab-content {
         .tabs-item {
             padding: {
@@ -1740,6 +1922,7 @@ About CSS
                 right: 30px;
                 left: 15px;
             };
+
             .about-inner-area {
                 .about-content {
                     .sub-title {
@@ -1751,6 +1934,7 @@ About CSS
                             weight: 600;
                         };
                     }
+
                     h2 {
                         margin-bottom: 20px;
                         color: $white-color;
@@ -1759,24 +1943,29 @@ About CSS
                             weight: 700;
                         };
                     }
+
                     p {
                         font-size: 15px;
                     }
+
                     .default-btn {
                         margin-top: 25px;
                     }
                 }
+
                 .about-image {
                     padding: {
                         left: 0;
                         right: 0;
                         bottom: 0;
                     };
+
                     &::before {
                         display: none;
                     }
                 }
             }
+
             .skills-area {
                 margin-bottom: -25px;
 
@@ -1798,6 +1987,7 @@ About CSS
                                 family: $font-family1;
                             };
                         }
+
                         .skills-percentage {
                             position: absolute;
                             right: 0;
@@ -1809,6 +1999,7 @@ About CSS
                             };
                         }
                     }
+
                     .skills-bar {
                         position: relative;
                         width: 100%;
@@ -1821,6 +2012,7 @@ About CSS
                                 top: 2px solid #364d55;
                                 bottom: 2px solid #364d55;
                             };
+
                             .bar {
                                 position: absolute;
                                 left: 0;
@@ -1836,6 +2028,7 @@ About CSS
                     }
                 }
             }
+
             .awards-area {
                 margin-bottom: -30px;
 
@@ -1844,6 +2037,7 @@ About CSS
                     text-align: center;
                 }
             }
+
             .experience-area {
                 margin-bottom: -25px;
 
@@ -1860,6 +2054,7 @@ About CSS
                             weight: 600;
                         };
                     }
+
                     h3 {
                         color: $white-color;
                         margin-bottom: 12px;
@@ -1868,6 +2063,7 @@ About CSS
                             weight: 600;
                         };
                     }
+
                     p {
                         font-size: 15px;
                         color: $white-color;
@@ -1876,6 +2072,7 @@ About CSS
                     }
                 }
             }
+
             .education-area {
                 margin-bottom: -25px;
 
@@ -1892,6 +2089,7 @@ About CSS
                             weight: 600;
                         };
                     }
+
                     h3 {
                         margin-bottom: 12px;
                         color: $white-color;
@@ -1900,6 +2098,7 @@ About CSS
                             weight: 600;
                         };
                     }
+
                     p {
                         font-size: 15px;
                         line-height: 1.8;
@@ -1908,6 +2107,7 @@ About CSS
                     }
                 }
             }
+
             .certification-area {
                 margin-bottom: -30px;
 
@@ -1916,6 +2116,7 @@ About CSS
                     text-align: center;
                 }
             }
+
             .interview-area {
                 margin-bottom: -30px;
 
@@ -1932,6 +2133,7 @@ About CSS
                         top: 0;
                         z-index: 2;
                     }
+
                     &::before {
                         content: '';
                         position: absolute;
@@ -1944,6 +2146,7 @@ About CSS
                         visibility: hidden;
                         opacity: 0;
                     }
+
                     &::after {
                         content: "\EF85";
                         z-index: 1;
@@ -1963,15 +2166,17 @@ About CSS
                         opacity: 0;
                         visibility: hidden;
                         font: {
-                            family: remixicon!important;
+                            family: remixicon !important;
                             size: 30px;
                         };
                     }
+
                     &:hover {
                         &::before {
                             visibility: visible;
                             opacity: 0.55;
                         }
+
                         &::after {
                             margin-top: 0;
                             opacity: 1;
@@ -1980,6 +2185,7 @@ About CSS
                     }
                 }
             }
+
             .social-area {
                 ul {
                     padding-left: 0;
@@ -1991,6 +2197,7 @@ About CSS
                         left: -15px;
                         right: -15px;
                     };
+
                     li {
                         display: block;
                         flex: 0 0 33.333333%;
@@ -2001,14 +2208,15 @@ About CSS
                             bottom: 70px;
                             top: 35px;
                         };
+
                         a {
                             display: block;
                             background: $white-color;
                             padding-left: 20px;
                             position: relative;
-                            transform: rotate(-30deg) skew(25deg) translate(0,0);
+                            transform: rotate(-30deg) skew(25deg) translate(0, 0);
                             transition: $transition;
-                            box-shadow: -20px 20px 10px rgba(0,0,0,.5);
+                            box-shadow: -20px 20px 10px rgba(0, 0, 0, .5);
 
                             i {
                                 font-size: 40px;
@@ -2017,6 +2225,7 @@ About CSS
                                 transition: $transition;
                                 padding-right: 15px;
                             }
+
                             span {
                                 padding: 0;
                                 margin: 0;
@@ -2026,6 +2235,7 @@ About CSS
                                 letter-spacing: 4px;
                                 transition: $transition;
                             }
+
                             &::before {
                                 content: '';
                                 position: absolute;
@@ -2037,6 +2247,7 @@ About CSS
                                 background: #b1b1b1;
                                 transform: rotate(0deg) skewY(-45deg);
                             }
+
                             &::after {
                                 content: '';
                                 transition: $transition;
@@ -2048,79 +2259,95 @@ About CSS
                                 background: #b1b1b1;
                                 transform: rotate(0deg) skewX(-45deg);
                             }
+
                             &:hover {
-                                transform: rotate(-30deg) skew(25deg) translate(20px,-15px);
-                                box-shadow: -50px 50px 50px rgba(0,0,0,.5);
+                                transform: rotate(-30deg) skew(25deg) translate(20px, -15px);
+                                box-shadow: -50px 50px 50px rgba(0, 0, 0, .5);
                                 background: $main-color;
 
                                 i {
                                     color: $white-color;
                                 }
+
                                 span {
                                     color: $white-color;
                                 }
+
                                 &::before {
                                     background: #ad997c;
                                 }
+
                                 &::after {
                                     background: #827b71;
                                 }
+
                                 &.facebook {
                                     background: #3b5998;
 
                                     &::before {
                                         background: #365492;
                                     }
+
                                     &::after {
                                         background: #4a69ad;
                                     }
                                 }
+
                                 &.twitter {
                                     background: #00aced;
 
                                     &::before {
                                         background: #097aa5;
                                     }
+
                                     &::after {
                                         background: #53b9e0;
                                     }
                                 }
+
                                 &.linkedin {
                                     background: #0077b5;
 
                                     &::before {
                                         background: #097aa5;
                                     }
+
                                     &::after {
                                         background: #00a0dc;
                                     }
                                 }
+
                                 &.instagram {
                                     background: #e4405f;
 
                                     &::before {
                                         background: #d81c3f;
                                     }
+
                                     &::after {
                                         background: #e46880;
                                     }
                                 }
+
                                 &.dribbble {
                                     background: #ea4c89;
 
                                     &::before {
                                         background: #af426c;
                                     }
+
                                     &::after {
                                         background: #a35070;
                                     }
                                 }
+
                                 &.behance {
                                     background: #1769ff;
 
                                     &::before {
                                         background: #2a5dbc;
                                     }
+
                                     &::after {
                                         background: #2a5db9;
                                     }
@@ -2133,6 +2360,7 @@ About CSS
         }
     }
 }
+
 @keyframes opacityChange {
     0% {
         opacity: .50;
@@ -2156,6 +2384,7 @@ Services CSS
         };
     }
 }
+
 .single-services-box {
     position: relative;
     z-index: 1;
@@ -2176,6 +2405,7 @@ Services CSS
         z-index: -1;
         transform: scaleX(0);
     }
+
     &::before {
         content: '';
         position: absolute;
@@ -2188,6 +2418,7 @@ Services CSS
         z-index: -1;
         transform: scaleY(0);
     }
+
     .icon {
         color: $main-color;
         font-size: 50px;
@@ -2196,6 +2427,7 @@ Services CSS
             top: -10px;
         };
     }
+
     h3 {
         color: $white-color;
         margin-bottom: 15px;
@@ -2203,6 +2435,7 @@ Services CSS
             size: 22px;
             weight: 700;
         };
+
         a {
             display: inline-block;
             color: $white-color;
@@ -2212,11 +2445,13 @@ Services CSS
             }
         }
     }
+
     p {
         color: $white-color;
         font-size: 14.5px;
         opacity: 0.85;
     }
+
     .read-more-btn {
         display: inline-block;
         position: relative;
@@ -2225,6 +2460,7 @@ Services CSS
             size: 15px;
             weight: 600;
         };
+
         i {
             position: absolute;
             right: 0;
@@ -2236,6 +2472,7 @@ Services CSS
             visibility: hidden;
             transition: $transition;
         }
+
         &:hover {
             padding-right: 20px;
             color: $white-color;
@@ -2246,15 +2483,18 @@ Services CSS
             }
         }
     }
+
     &:hover {
         &::after {
             transform: scaleX(1);
         }
+
         &::before {
             transform: scaleY(1);
         }
     }
 }
+
 .services-box {
     background-color: $black-color;
     padding: 70px 30px 30px;
@@ -2264,6 +2504,7 @@ Services CSS
         bottom: 30px;
         top: 40px;
     };
+
     .icon {
         position: absolute;
         left: 0;
@@ -2287,6 +2528,7 @@ Services CSS
             transform: translateY(-50%);
         }
     }
+
     h3 {
         margin-bottom: 15px;
         color: $white-color;
@@ -2296,12 +2538,14 @@ Services CSS
             weight: 700;
         };
     }
+
     p {
         color: $white-color;
         font-size: 14.5px;
         opacity: 0.85;
         margin-bottom: 0;
     }
+
     .details-btn {
         display: inline-block;
         margin-top: 20px;
@@ -2324,6 +2568,7 @@ Services CSS
             opacity: 0;
             visibility: hidden;
         }
+
         &:hover {
             color: $main-color;
 
@@ -2335,12 +2580,14 @@ Services CSS
             }
         }
     }
-    &:hover {        
+
+    &:hover {
         .icon {
             background-color: $main-color;
             border-color: $main-color;
             color: $white-color;
         }
+
         h3 {
             color: $main-color;
         }
@@ -2351,7 +2598,7 @@ Services CSS
 Services Details CSS
 =================================================*/
 .services-details-overview {
-    align-items: center!important;
+    align-items: center !important;
     display: flex;
     flex-wrap: wrap;
     margin: {
@@ -2359,9 +2606,11 @@ Services Details CSS
         left: -25px;
         bottom: 60px;
     };
+
     &:last-child {
         margin-bottom: 0;
     }
+
     .services-details-desc {
         flex: 0 0 50%;
         max-width: 50%;
@@ -2369,6 +2618,7 @@ Services Details CSS
             right: 25px;
             left: 25px;
         };
+
         h3 {
             margin-bottom: 15px;
             color: $white-color;
@@ -2377,14 +2627,16 @@ Services Details CSS
                 weight: 700;
             };
         }
+
         p {
             color: $white-color;
             font-size: 15px;
             opacity: 0.9;
         }
+
         .features-text {
             margin-top: 25px;
-    
+
             h4 {
                 margin-bottom: 15px;
                 color: $white-color;
@@ -2392,6 +2644,7 @@ Services Details CSS
                     size: 17px;
                     weight: 600;
                 };
+
                 i {
                     font-size: 18px;
                     margin-right: 4px;
@@ -2401,6 +2654,7 @@ Services Details CSS
                 }
             }
         }
+
         .services-details-accordion {
             margin-top: 25px;
 
@@ -2410,16 +2664,18 @@ Services Details CSS
                 margin: {
                     bottom: 0;
                 };
+
                 .accordion-item {
                     display: block;
                     box-shadow: 0 0 1.25rem rgba(108, 118, 134, 0.1);
                     background: $dark-blue-color;
                     margin-bottom: 10px;
-        
+
                     &:last-child {
                         margin-bottom: 0;
                     }
                 }
+
                 .accordion-title {
                     padding: 15px 20px 15px 51px;
                     color: $white-color;
@@ -2431,6 +2687,7 @@ Services Details CSS
                         size: $font-size;
                         weight: 600;
                     };
+
                     i {
                         position: absolute;
                         left: 0;
@@ -2440,7 +2697,7 @@ Services Details CSS
                         height: 100%;
                         background: $main-color;
                         color: $white-color;
-        
+
                         &::before {
                             position: absolute;
                             left: 0;
@@ -2450,9 +2707,10 @@ Services Details CSS
                             font-size: 15px;
                         }
                     }
+
                     &.active {
                         border-bottom-color: #515151;
-        
+
                         i {
                             &::before {
                                 content: "\F0FB";
@@ -2460,11 +2718,12 @@ Services Details CSS
                         }
                     }
                 }
+
                 .accordion-content {
                     display: none;
                     position: relative;
                     padding: 15px 15px;
-        
+
                     &.show {
                         display: block;
                     }
@@ -2472,6 +2731,7 @@ Services Details CSS
             }
         }
     }
+
     .services-details-image {
         flex: 0 0 50%;
         max-width: 50%;
@@ -2495,6 +2755,7 @@ Funfacts CSS
         size: cover;
         repeat: no-repeat;
     };
+
     &::before {
         position: absolute;
         left: 0;
@@ -2507,6 +2768,7 @@ Funfacts CSS
         opacity: .50;
     }
 }
+
 .single-funfacts {
     margin-bottom: 30px;
     position: relative;
@@ -2519,11 +2781,13 @@ Funfacts CSS
         font-size: 50px;
         color: $main-color;
     }
+
     p {
         margin-bottom: 5px;
         line-height: initial;
         color: $white-color;
     }
+
     h3 {
         color: $white-color;
         margin-bottom: -13px;
@@ -2532,11 +2796,13 @@ Funfacts CSS
             weight: 700;
             family: $font-family1;
         };
+
         .odometer-formatting-mark {
             display: none;
         }
     }
 }
+
 .funfacts-area-two {
     padding-bottom: 70px;
     position: relative;
@@ -2547,6 +2813,7 @@ Funfacts CSS
         size: cover;
         repeat: no-repeat;
     };
+
     &::before {
         position: absolute;
         left: 0;
@@ -2559,6 +2826,7 @@ Funfacts CSS
         opacity: .60;
     }
 }
+
 .funfacts-box {
     margin-bottom: 50px;
     position: relative;
@@ -2579,11 +2847,13 @@ Funfacts CSS
         transition: $transition;
         line-height: 70px;
     }
+
     p {
         margin-bottom: 5px;
         line-height: initial;
         color: $white-color;
     }
+
     h3 {
         color: $main-color;
         margin-bottom: -13px;
@@ -2592,10 +2862,12 @@ Funfacts CSS
             weight: 700;
             family: $font-family1;
         };
+
         .odometer-formatting-mark {
             display: none;
         }
     }
+
     &:hover {
         transform: translateY(-10px);
 
@@ -2612,18 +2884,19 @@ Works CSS
 =================================================*/
 .single-works-box {
     margin-bottom: 30px;
-    
+
     .works-image {
         overflow: hidden;
         border-radius: 5px;
         transition: all 0.3s cubic-bezier(0.3, 0.58, 0.55, 1);
         position: relative;
         z-index: 1;
-        
+
         img {
             border-radius: 5px;
             transition: $transition;
         }
+
         &::before, &::after {
             top: 50%;
             left: 50%;
@@ -2635,16 +2908,19 @@ Works CSS
             transform: translate(-50%, -50%);
             transition: all 0.8s cubic-bezier(0.2, 1, 0.22, 1);
         }
+
         &::before {
             width: 60px;
             height: 2px;
             left: 100%;
         }
+
         &::after {
             height: 60px;
             width: 2px;
             top: 0;
         }
+
         .overlay {
             position: absolute;
             left: 0;
@@ -2658,6 +2934,7 @@ Works CSS
             content: '';
             transition: $transition;
         }
+
         .link-btn {
             position: absolute;
             left: 0;
@@ -2669,6 +2946,7 @@ Works CSS
             border-radius: 5px;
         }
     }
+
     .works-content {
         margin-top: 20px;
 
@@ -2679,15 +2957,17 @@ Works CSS
                 size: 22px;
                 weight: 700;
             };
+
             a {
                 display: inline-block;
                 color: $white-color;
-    
+
                 &:hover {
                     color: $main-color;
                 }
             }
         }
+
         ul {
             padding-left: 0;
             margin-bottom: 0;
@@ -2708,6 +2988,7 @@ Works CSS
                         color: $white-color;
                     }
                 }
+
                 &::before {
                     width: 1px;
                     height: 14px;
@@ -2718,6 +2999,7 @@ Works CSS
                     top: 5px;
                     background-color: $main-color;
                 }
+
                 &:last-child {
                     margin-right: 0;
 
@@ -2728,6 +3010,7 @@ Works CSS
             }
         }
     }
+
     &:hover {
         .works-image {
             &::before, &::after {
@@ -2735,9 +3018,11 @@ Works CSS
                 top: 50%;
                 left: 50%;
             }
+
             img {
                 transform: scale(1.2) rotate(4deg);
             }
+
             .overlay {
                 opacity: 0;
                 visibility: hidden;
@@ -2745,16 +3030,17 @@ Works CSS
         }
     }
 }
+
 .works-box {
     margin-bottom: 30px;
-    
+
     .works-image {
         overflow: hidden;
         border-radius: 5px;
         transition: all 0.3s cubic-bezier(0.3, 0.58, 0.55, 1);
         position: relative;
         z-index: 1;
-        
+
         a {
             display: block;
 
@@ -2763,6 +3049,7 @@ Works CSS
                 transition: $transition;
             }
         }
+
         &::before, &::after {
             top: 50%;
             left: 50%;
@@ -2774,17 +3061,20 @@ Works CSS
             transform: translate(-50%, -50%);
             transition: all 0.8s cubic-bezier(0.2, 1, 0.22, 1);
         }
+
         &::before {
             width: 60px;
             height: 2px;
             left: 100%;
         }
+
         &::after {
             height: 60px;
             width: 2px;
             top: 0;
         }
     }
+
     .works-content {
         margin-top: 20px;
 
@@ -2795,15 +3085,17 @@ Works CSS
                 size: 22px;
                 weight: 700;
             };
+
             a {
                 display: inline-block;
                 color: $white-color;
-    
+
                 &:hover {
                     color: $main-color;
                 }
             }
         }
+
         ul {
             padding-left: 0;
             margin-bottom: 0;
@@ -2824,6 +3116,7 @@ Works CSS
                         color: $white-color;
                     }
                 }
+
                 &::before {
                     width: 1px;
                     height: 14px;
@@ -2834,6 +3127,7 @@ Works CSS
                     top: 5px;
                     background-color: $main-color;
                 }
+
                 &:last-child {
                     margin-right: 0;
 
@@ -2844,6 +3138,7 @@ Works CSS
             }
         }
     }
+
     &:hover {
         .works-image {
             &::before, &::after {
@@ -2851,6 +3146,7 @@ Works CSS
                 top: 50%;
                 left: 50%;
             }
+
             img {
                 transform: scale(1.2) rotate(4deg);
             }
@@ -2869,6 +3165,7 @@ Works Details CSS
     img {
         transition: $transition;
     }
+
     a {
         position: absolute;
         left: 50%;
@@ -2892,17 +3189,20 @@ Works Details CSS
             color: $white-color;
         }
     }
+
     &:hover {
         a {
             margin-top: 0;
             opacity: 1;
             visibility: visible;
         }
+
         img {
             transform: scale(1.3) rotate(4deg);
         }
     }
 }
+
 .works-details-desc {
     margin-top: 5px;
 
@@ -2914,16 +3214,19 @@ Works Details CSS
             weight: 700;
         };
     }
+
     p {
         color: $white-color;
         opacity: 0.9;
         font-size: 15px;
     }
+
     .features-text {
         margin: {
             top: 25px;
             bottom: 25px;
         };
+
         h4 {
             margin-bottom: 15px;
             color: $white-color;
@@ -2931,6 +3234,7 @@ Works Details CSS
                 size: 17px;
                 weight: 600;
             };
+
             i {
                 font-size: 18px;
                 margin-right: 4px;
@@ -2940,6 +3244,7 @@ Works Details CSS
             }
         }
     }
+
     .works-details-info {
         display: flex;
         flex-wrap: wrap;
@@ -2948,6 +3253,7 @@ Works Details CSS
             left: -15px;
             top: 35px;
         };
+
         .single-info-box {
             flex: 0 0 20%;
             max-width: 20%;
@@ -2955,6 +3261,7 @@ Works Details CSS
                 left: 15px;
                 right: 15px;
             }
+
             h4 {
                 margin-bottom: 10px;
                 color: $white-color;
@@ -2963,11 +3270,13 @@ Works Details CSS
                     weight: 600;
                 }
             }
+
             span {
                 display: block;
                 color: $white-color;
                 font-size: 15px;
             }
+
             .social {
                 padding-left: 0;
                 margin-bottom: 0;
@@ -3001,11 +3310,13 @@ Feeback CSS
             left: 0;
             right: 0;
         };
+
         .row {
             margin: {
                 left: 0;
                 right: 0;
             };
+
             .col-lg-7, .col-lg-5 {
                 padding: {
                     left: 0;
@@ -3015,6 +3326,7 @@ Feeback CSS
         }
     }
 }
+
 .feedback-content {
     width: 100%;
     height: 100%;
@@ -3026,6 +3338,7 @@ Feeback CSS
         size: cover;
         repeat: no-repeat;
     };
+
     &::before {
         position: absolute;
         left: 0;
@@ -3037,6 +3350,7 @@ Feeback CSS
         background-color: $black-color;
         opacity: 0.71;
     }
+
     .section-title {
         text-align: left;
         max-width: 455px;
@@ -3044,6 +3358,7 @@ Feeback CSS
             bottom: 0;
             left: auto;
         };
+
         h2 {
             max-width: 360px;
             margin: {
@@ -3053,6 +3368,7 @@ Feeback CSS
         }
     }
 }
+
 .feedback-slides-content {
     padding: {
         top: 120px;
@@ -3061,6 +3377,7 @@ Feeback CSS
         right: 90px;
     };
 }
+
 .single-feedback-item {
     margin-bottom: 30px;
     position: relative;
@@ -3071,6 +3388,7 @@ Feeback CSS
         font-size: 65px;
         margin: -30px 0 -5px -7px;
     }
+
     p {
         color: $white-color;
         margin-bottom: 0;
@@ -3079,6 +3397,7 @@ Feeback CSS
             style: italic;
         };
     }
+
     .client-info {
         margin-top: 20px;
 
@@ -3090,6 +3409,7 @@ Feeback CSS
                 weight: 700;
             };
         }
+
         span {
             display: block;
             color: $main-color;
@@ -3097,6 +3417,7 @@ Feeback CSS
         }
     }
 }
+
 .feedback-slides {
     &.owl-theme {
         .owl-nav {
@@ -3122,6 +3443,7 @@ Feeback CSS
                 }
             }
         }
+
         .owl-dots {
             text-align: left;
             margin-top: 10px;
@@ -3150,10 +3472,11 @@ Feeback CSS
                         transition: $transition;
                     }
                 }
+
                 &:hover, &.active {
                     span {
                         border-color: $main-color;
-                    
+
                         &::before {
                             background-color: $main-color;
                         }
@@ -3173,6 +3496,7 @@ Countdown CSS
         bottom: 70px;
     };
 }
+
 .countdown-content {
     text-align: right;
 
@@ -3186,9 +3510,10 @@ Countdown CSS
         };
     }
 }
+
 .countdown-timer {
     padding-left: 15px;
-    
+
     #timer {
         div {
             display: inline-block;
@@ -3203,6 +3528,7 @@ Countdown CSS
                 left: 30px;
                 right: 30px;
             };
+
             span {
                 color: $white-color;
                 margin-top: -6px;
@@ -3212,6 +3538,7 @@ Countdown CSS
                     weight: 500;
                 };
             }
+
             &::before {
                 content: "\EEFD";
                 position: absolute;
@@ -3220,15 +3547,17 @@ Countdown CSS
                 color: $white-color;
                 font: {
                     size: 35px;
-                    family: remixicon!important;
+                    family: remixicon !important;
                     weight: normal;
                     style: normal;
                     variant: normal;
                 };
             }
+
             &:first-child {
                 margin-left: 0;
             }
+
             &:last-child {
                 margin-right: 0;
 
@@ -3249,6 +3578,7 @@ My Clients CSS
             left: 0;
             right: 0;
         };
+
         .col-lg-3 {
             padding: {
                 left: 0;
@@ -3257,6 +3587,7 @@ My Clients CSS
         }
     }
 }
+
 .single-clients {
     text-align: center;
 
@@ -3268,6 +3599,7 @@ My Clients CSS
         img {
             transition: $transition;
         }
+
         &:hover {
             img {
                 transform: scale(1.1);
@@ -3275,6 +3607,7 @@ My Clients CSS
         }
     }
 }
+
 .col-lg-3 {
     &:nth-child(1) {
         .single-clients {
@@ -3286,6 +3619,7 @@ My Clients CSS
             }
         }
     }
+
     &:nth-child(2) {
         .single-clients {
             a {
@@ -3296,6 +3630,7 @@ My Clients CSS
             }
         }
     }
+
     &:nth-child(3) {
         .single-clients {
             a {
@@ -3306,6 +3641,7 @@ My Clients CSS
             }
         }
     }
+
     &:nth-child(5) {
         .single-clients {
             a {
@@ -3315,6 +3651,7 @@ My Clients CSS
             }
         }
     }
+
     &:nth-child(6) {
         .single-clients {
             a {
@@ -3324,6 +3661,7 @@ My Clients CSS
             }
         }
     }
+
     &:nth-child(7) {
         .single-clients {
             a {
@@ -3348,6 +3686,7 @@ Hire Me CSS
             weight: 600;
         };
     }
+
     h2 {
         margin-bottom: 0;
         color: $white-color;
@@ -3357,6 +3696,7 @@ Hire Me CSS
         };
     }
 }
+
 .hire-me-btn {
     text-align: right;
 }
@@ -3373,11 +3713,13 @@ Training CSS
             left: 0;
             right: 0;
         };
+
         .row {
             margin: {
                 left: 0;
                 right: 0;
             };
+
             .col-lg-6 {
                 padding: {
                     left: 0;
@@ -3387,6 +3729,7 @@ Training CSS
         }
     }
 }
+
 .training-image {
     height: 100%;
     width: 100%;
@@ -3395,28 +3738,35 @@ Training CSS
         size: cover;
         repeat: no-repeat;
     };
+
     &.bg1 {
         background-image: url(assets/img/training-bg1.jpg);
     }
+
     &.bg2 {
         background-image: url(assets/img/training-bg2.jpg);
     }
+
     &.bg3 {
         background-image: url(assets/img/training-bg3.jpg);
     }
+
     &.bg4 {
         background-image: url(assets/img/training-bg4.jpg);
     }
+
     img {
         display: none;
     }
 }
+
 .training-content {
     padding: {
         top: 120px;
         bottom: 120px;
         right: 120px;
     };
+
     .inner {
         background-color: $black-color;
         padding: 40px;
@@ -3432,9 +3782,11 @@ Training CSS
                 weight: 700;
             };
         }
+
         p {
             color: $white-color;
         }
+
         ul {
             padding-left: 0;
             margin-bottom: 15px;
@@ -3460,11 +3812,13 @@ Training CSS
                     background-color: $main-color;
                     border-radius: 50%;
                 }
+
                 &:last-child {
                     margin-bottom: 0;
                 }
             }
         }
+
         .price {
             color: $main-color;
             margin-bottom: 20px;
@@ -3472,6 +3826,7 @@ Training CSS
                 size: 30px;
                 weight: 700;
             };
+
             span {
                 color: $white-color;
                 font: {
@@ -3481,11 +3836,13 @@ Training CSS
             }
         }
     }
+
     &.left-content {
         padding: {
             right: 0;
             left: 120px;
         };
+
         .inner {
             margin: {
                 left: 0;
@@ -3502,6 +3859,7 @@ Projects CSS
     position: relative;
     z-index: 1;
 }
+
 .single-projects-box {
     margin-bottom: 30px;
     position: relative;
@@ -3511,6 +3869,7 @@ Projects CSS
     img {
         transition: $transition;
     }
+
     .content {
         top: 0;
         left: 0;
@@ -3519,7 +3878,7 @@ Projects CSS
         height: 100%;
         padding: 30px;
         position: absolute;
-        background: linear-gradient(to bottom,rgba(0, 0, 0, 0) 50%,rgba(0, 0, 0, .65) 100%);
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, .65) 100%);
 
         .inner {
             position: absolute;
@@ -3537,6 +3896,7 @@ Projects CSS
                     size: 20px;
                     weight: 400;
                 };
+
                 a {
                     color: $white-color;
                     display: inline-block;
@@ -3546,6 +3906,7 @@ Projects CSS
                     }
                 }
             }
+
             .category {
                 display: inline-block;
                 color: $main-color;
@@ -3556,6 +3917,7 @@ Projects CSS
                 };
             }
         }
+
         .date {
             position: absolute;
             right: -100%;
@@ -3573,10 +3935,12 @@ Projects CSS
             };
         }
     }
+
     &:hover {
         img {
             transform: rotate(5deg) scale(1.2);
         }
+
         .content {
             .date {
                 visibility: visible;
@@ -3598,11 +3962,13 @@ Shop CSS
             left: 0;
             right: 0;
         };
+
         .row {
             margin: {
                 left: 0;
                 right: 0;
             };
+
             .col-lg-6 {
                 padding: {
                     left: 0;
@@ -3612,6 +3978,7 @@ Shop CSS
         }
     }
 }
+
 .shop-image {
     height: 100%;
     width: 100%;
@@ -3620,28 +3987,35 @@ Shop CSS
         size: cover;
         repeat: no-repeat;
     };
+
     &.bg1 {
         background-image: url(assets/img/shop/shop-bg1.jpg);
     }
+
     &.bg2 {
         background-image: url(assets/img/shop/shop-bg2.jpg);
     }
+
     &.bg3 {
         background-image: url(assets/img/shop/shop-bg3.jpg);
     }
+
     &.bg4 {
         background-image: url(assets/img/shop/shop-bg4.jpg);
     }
+
     img {
         display: none;
     }
 }
+
 .shop-content {
     padding: {
         top: 120px;
         bottom: 120px;
         right: 120px;
     };
+
     .inner {
         background-color: $black-color;
         padding: 40px;
@@ -3657,9 +4031,11 @@ Shop CSS
                 weight: 700;
             };
         }
+
         p {
             color: $white-color;
         }
+
         ul {
             padding-left: 0;
             margin-bottom: 15px;
@@ -3685,11 +4061,13 @@ Shop CSS
                     background-color: $main-color;
                     border-radius: 50%;
                 }
+
                 &:last-child {
                     margin-bottom: 0;
                 }
             }
         }
+
         .price {
             color: $main-color;
             margin-bottom: 20px;
@@ -3697,6 +4075,7 @@ Shop CSS
                 size: 30px;
                 weight: 700;
             };
+
             span {
                 color: $white-color;
                 font: {
@@ -3706,11 +4085,13 @@ Shop CSS
             }
         }
     }
+
     &.left-content {
         padding: {
             right: 0;
             left: 120px;
         };
+
         .inner {
             margin: {
                 left: 0;
@@ -3727,11 +4108,12 @@ Book Trainer CSS
     position: relative;
     z-index: 1;
 }
+
 .book-trainer-content {
     text-align: center;
 
     h2 {
-        color:  $white-color;
+        color: $white-color;
         animation: filling 3s ease forwards;
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
@@ -3755,11 +4137,12 @@ Team CSS
 .single-team-box {
     position: relative;
     margin-bottom: 20px;
-    
+
     img {
         filter: grayscale(100%);
         transition: $transition;
     }
+
     .team-content {
         z-index: 1;
         position: relative;
@@ -3767,6 +4150,7 @@ Team CSS
             left: 15px;
             top: -15px;
         };
+
         h3 {
             color: $white-color;
             margin-bottom: 9px;
@@ -3775,6 +4159,7 @@ Team CSS
                 weight: 700;
             };
         }
+
         span {
             display: block;
             text-transform: uppercase;
@@ -3783,18 +4168,21 @@ Team CSS
             font-size: 14px;
         }
     }
+
     &:hover {
         img {
             filter: unset;
         }
     }
 }
+
 .team-slides {
     &.owl-theme {
         .owl-dots {
             margin: {
                 top: 30px !important;
             };
+
             .owl-dot {
                 span {
                     width: 15px;
@@ -3819,10 +4207,11 @@ Team CSS
                         transition: $transition;
                     }
                 }
+
                 &:hover, &.active {
                     span {
                         border-color: $main-color;
-                    
+
                         &::before {
                             background-color: $main-color;
                         }
@@ -3851,6 +4240,7 @@ Blog CSS
             }
         }
     }
+
     .post-content {
         position: relative;
         z-index: 1;
@@ -3862,6 +4252,7 @@ Blog CSS
             left: 10px;
             right: 10px;
         };
+
         .post-tag {
             padding-left: 0;
             margin-bottom: 0;
@@ -3882,6 +4273,7 @@ Blog CSS
                         color: $white-color;
                     }
                 }
+
                 &::before {
                     width: 1px;
                     height: 14px;
@@ -3892,6 +4284,7 @@ Blog CSS
                     top: 5px;
                     background-color: $main-color;
                 }
+
                 &:last-child {
                     margin-right: 0;
 
@@ -3901,6 +4294,7 @@ Blog CSS
                 }
             }
         }
+
         h3 {
             line-height: 1.4;
             color: $white-color;
@@ -3912,6 +4306,7 @@ Blog CSS
                 size: 23px;
                 weight: 700;
             };
+
             a {
                 display: inline-block;
                 color: $white-color;
@@ -3921,6 +4316,7 @@ Blog CSS
                 }
             }
         }
+
         .post-meta {
             position: relative;
 
@@ -3935,15 +4331,16 @@ Blog CSS
                     color: $white-color;
                     display: inline-block;
                     font-size: 14px;
-    
+
                     a {
                         display: inline-block;
                         color: $main-color;
-    
+
                         &:hover {
                             color: $white-color;
                         }
                     }
+
                     &::before {
                         width: 1px;
                         height: 14px;
@@ -3954,15 +4351,17 @@ Blog CSS
                         top: 5px;
                         background-color: $white-color;
                     }
+
                     &:last-child {
                         margin-right: 0;
-    
+
                         &::before {
                             display: none;
                         }
                     }
                 }
             }
+
             .details-btn {
                 position: absolute;
                 right: 0;
@@ -3984,6 +4383,7 @@ Blog CSS
                     top: 48%;
                     transform: translateY(-48%);
                 }
+
                 &:hover {
                     background-color: $main-color;
                     color: $black-color;
@@ -3992,6 +4392,7 @@ Blog CSS
         }
     }
 }
+
 .blog-slides {
     &.owl-theme {
         .owl-dots {
@@ -3999,6 +4400,7 @@ Blog CSS
                 top: 30px !important;
                 bottom: 30px;
             };
+
             .owl-dot {
                 span {
                     width: 15px;
@@ -4023,10 +4425,11 @@ Blog CSS
                         transition: $transition;
                     }
                 }
+
                 &:hover, &.active {
                     span {
                         border-color: $main-color;
-                    
+
                         &::before {
                             background-color: $main-color;
                         }
@@ -4046,6 +4449,7 @@ Blog Details CSS
             width: 100%;
         }
     }
+
     .article-content {
         margin-top: 30px;
 
@@ -4054,7 +4458,7 @@ Blog Details CSS
                 padding-left: 0;
                 margin-bottom: 0;
                 list-style-type: none;
-    
+
                 li {
                     margin-right: 20px;
                     position: relative;
@@ -4069,6 +4473,7 @@ Blog Details CSS
                         right: 20px;
                         left: 45px;
                     };
+
                     i {
                         font-size: 30px;
                         color: #cfcfcf;
@@ -4077,6 +4482,7 @@ Blog Details CSS
                         top: 50%;
                         transform: translateY(-50%);
                     }
+
                     span {
                         display: block;
                         color: $main-color;
@@ -4087,14 +4493,16 @@ Blog Details CSS
                             weight: 600;
                         };
                     }
+
                     a {
                         display: inline-block;
                         color: $white-color;
-    
+
                         &:hover, &:focus {
                             color: $main-color;
                         }
                     }
+
                     &:last-child {
                         padding-right: 0;
                         margin-right: 0;
@@ -4103,6 +4511,7 @@ Blog Details CSS
                 }
             }
         }
+
         h3 {
             color: $white-color;
             margin: {
@@ -4114,6 +4523,7 @@ Blog Details CSS
                 weight: 700;
             };
         }
+
         p {
             color: $white-color;
             font-size: 15px;
@@ -4124,6 +4534,7 @@ Blog Details CSS
                 margin-bottom: 0;
             }
         }
+
         .wp-block-gallery {
             &.columns-3 {
                 padding-left: 0;
@@ -4136,6 +4547,7 @@ Blog Details CSS
                     bottom: 30px;
                     top: 30px;
                 }
+
                 li {
                     flex: 0 0 33.3333%;
                     max-width: 33.3333%;
@@ -4143,12 +4555,14 @@ Blog Details CSS
                         right: 10px;
                         left: 10px;
                     }
+
                     figure {
                         margin-bottom: 0;
                     }
                 }
             }
         }
+
         .features-list {
             padding-left: 0;
             list-style-type: none;
@@ -4156,6 +4570,7 @@ Blog Details CSS
                 top: 25px;
                 bottom: 30px;
             };
+
             li {
                 margin-bottom: 15px;
                 position: relative;
@@ -4172,12 +4587,14 @@ Blog Details CSS
                     left: 0;
                     top: 0;
                 }
+
                 &:last-child {
                     margin-bottom: 0;
                 }
             }
         }
     }
+
     .article-footer {
         display: flex;
         flex-wrap: wrap;
@@ -4186,11 +4603,12 @@ Blog Details CSS
         margin: {
             top: 30px;
         };
+
         .article-tags {
             flex: 0 0 50%;
             max-width: 50%;
             color: $white-color;
-            
+
             span {
                 display: inline-block;
                 margin-right: 3px;
@@ -4201,6 +4619,7 @@ Blog Details CSS
                     size: 20px;
                 };
             }
+
             a {
                 display: inline-block;
                 color: $white-color;
@@ -4208,15 +4627,17 @@ Blog Details CSS
                     weight: 500;
                     size: 15.5px;
                 };
+
                 &:hover {
                     color: $main-color;
                 }
             }
         }
+
         .article-share {
             flex: 0 0 50%;
             max-width: 50%;
-            
+
             .social {
                 padding-left: 0;
                 list-style-type: none;
@@ -4224,6 +4645,7 @@ Blog Details CSS
                 margin: {
                     bottom: 0;
                 };
+
                 li {
                     display: inline-block;
 
@@ -4235,6 +4657,7 @@ Blog Details CSS
                         color: $white-color;
                         top: -2px;
                     }
+
                     a {
                         display: block;
                         width: 32px;
@@ -4247,11 +4670,12 @@ Blog Details CSS
                         text-align: center;
                         font-size: 17px;
                         margin-left: 2px;
-        
+
                         &:hover, &:focus {
                             color: $main-color;
                             background-color: transparent;
                         }
+
                         &.facebook {
                             background-color: #3b5998;
                             border-color: #3b5998;
@@ -4262,6 +4686,7 @@ Blog Details CSS
                                 background-color: transparent;
                             }
                         }
+
                         &.twitter {
                             background-color: #1da1f2;
                             border-color: #1da1f2;
@@ -4272,6 +4697,7 @@ Blog Details CSS
                                 background-color: transparent;
                             }
                         }
+
                         &.linkedin {
                             background-color: #007bb5;
                             border-color: #007bb5;
@@ -4282,6 +4708,7 @@ Blog Details CSS
                                 background-color: transparent;
                             }
                         }
+
                         &.instagram {
                             background-color: #c13584;
                             border-color: #c13584;
@@ -4298,6 +4725,7 @@ Blog Details CSS
         }
     }
 }
+
 blockquote, .blockquote {
     overflow: hidden;
     background-color: $black-color;
@@ -4309,6 +4737,7 @@ blockquote, .blockquote {
         bottom: 20px;
         top: 20px;
     };
+
     p {
         color: $black-color;
         line-height: 1.6;
@@ -4320,9 +4749,11 @@ blockquote, .blockquote {
             size: 22px !important;
         };
     }
+
     cite {
         display: none;
     }
+
     &::before {
         color: #303030;
         position: absolute;
@@ -4331,13 +4762,14 @@ blockquote, .blockquote {
         z-index: -1;
         content: "\EC1F";
         font: {
-            family: remixicon!important;
+            family: remixicon !important;
             weight: normal;
             style: normal;
             variant: normal;
             size: 135px;
         };
     }
+
     &::after {
         content: '';
         position: absolute;
@@ -4352,6 +4784,7 @@ blockquote, .blockquote {
         };
     }
 }
+
 .placid-post-navigation {
     display: flex;
     flex-wrap: wrap;
@@ -4367,12 +4800,14 @@ blockquote, .blockquote {
         bottom: 1px solid #515151;
     };
 }
+
 .prev-link-wrapper {
     flex: 0 0 50%;
     max-width: 50%;
     padding: {
         right: 15px;
     };
+
     a {
         display: flex;
         align-items: center;
@@ -4383,16 +4818,19 @@ blockquote, .blockquote {
                     opacity: 1;
                     visibility: visible;
                 }
+
                 .post-nav-title {
                     opacity: 1;
                     visibility: visible;
                 }
             }
+
             .prev-link-info-wrapper {
                 color: $main-color;
             }
         }
     }
+
     .image-prev {
         display: inline-block;
         min-width: 100px;
@@ -4407,6 +4845,7 @@ blockquote, .blockquote {
         img {
             border-radius: 5px;
         }
+
         &::after {
             display: block;
             content: '';
@@ -4421,6 +4860,7 @@ blockquote, .blockquote {
             visibility: hidden;
             transition: $transition;
         }
+
         .post-nav-title {
             position: absolute;
             left: 0;
@@ -4441,10 +4881,12 @@ blockquote, .blockquote {
             };
         }
     }
+
     .prev-link-info-wrapper {
         color: $black-color;
         transition: $transition;
     }
+
     .prev-title {
         display: inline-block;
         color: $white-color;
@@ -4454,6 +4896,7 @@ blockquote, .blockquote {
         };
     }
 }
+
 .next-link-wrapper {
     flex: 0 0 50%;
     max-width: 50%;
@@ -4461,6 +4904,7 @@ blockquote, .blockquote {
     padding: {
         left: 15px;
     };
+
     a {
         display: flex;
         align-items: center;
@@ -4471,16 +4915,19 @@ blockquote, .blockquote {
                     opacity: 1;
                     visibility: visible;
                 }
+
                 .post-nav-title {
                     opacity: 1;
                     visibility: visible;
                 }
             }
+
             .next-link-info-wrapper {
                 color: $main-color;
             }
         }
     }
+
     .image-next {
         display: inline-block;
         min-width: 100px;
@@ -4495,6 +4942,7 @@ blockquote, .blockquote {
         img {
             border-radius: 5px;
         }
+
         &::after {
             display: block;
             content: '';
@@ -4509,6 +4957,7 @@ blockquote, .blockquote {
             visibility: hidden;
             transition: $transition;
         }
+
         .post-nav-title {
             position: absolute;
             left: 0;
@@ -4529,10 +4978,12 @@ blockquote, .blockquote {
             };
         }
     }
+
     .next-link-info-wrapper {
         transition: $transition;
         color: $black-color;
     }
+
     .next-title {
         display: inline-block;
         color: $white-color;
@@ -4542,6 +4993,7 @@ blockquote, .blockquote {
         };
     }
 }
+
 .comments-area {
     margin-top: 30px;
 
@@ -4556,19 +5008,23 @@ blockquote, .blockquote {
             weight: 700;
         };
     }
+
     ol, ul {
         padding: 0;
         margin: 0;
         list-style-type: none;
     }
+
     .comment-list {
         padding: 0;
         margin: 0;
         list-style-type: none;
     }
+
     .children {
         margin-left: 20px;
     }
+
     .comment-body {
         border-bottom: 1px dashed #515151;
         padding-left: 65px;
@@ -4583,6 +5039,7 @@ blockquote, .blockquote {
             margin-bottom: 20px;
             opacity: 0.85;
         }
+
         .reply {
             margin-top: 15px;
 
@@ -4597,6 +5054,7 @@ blockquote, .blockquote {
                     size: 12px;
                     weight: 600;
                 };
+
                 &:hover {
                     color: $white-color;
                     background-color: $main-color;
@@ -4605,6 +5063,7 @@ blockquote, .blockquote {
             }
         }
     }
+
     .comment-author {
         font-size: $font-size;
         margin-bottom: 0.3em;
@@ -4617,16 +5076,19 @@ blockquote, .blockquote {
             position: absolute;
             width: 50px;
         }
+
         .fn {
             color: $white-color;
             font: {
                 weight: 600;
             };
         }
+
         .says {
             display: none;
         }
     }
+
     .comment-metadata {
         margin-bottom: .8em;
         color: $white-color;
@@ -4636,6 +5098,7 @@ blockquote, .blockquote {
             size: 13px;
             weight: 400;
         };
+
         a {
             color: $white-color;
 
@@ -4644,6 +5107,7 @@ blockquote, .blockquote {
             }
         }
     }
+
     .comment-respond {
         margin-top: 30px;
 
@@ -4654,13 +5118,16 @@ blockquote, .blockquote {
                 size: 24px;
                 weight: 700;
             };
+
             #cancel-comment-reply-link {
                 display: inline-block;
             }
         }
+
         .comment-form {
             overflow: hidden;
         }
+
         .comment-notes {
             color: $white-color;
             font-size: 15px;
@@ -4669,17 +5136,21 @@ blockquote, .blockquote {
                 bottom: 20px;
                 top: 10px;
             };
+
             .required {
                 color: red;
             }
         }
+
         .comment-form-comment {
             float: left;
             width: 100%;
         }
+
         label {
             display: none;
         }
+
         input[type="date"], input[type="time"], input[type="datetime-local"], input[type="week"], input[type="month"], input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="tel"], input[type="number"], textarea {
             display: block;
             width: 100%;
@@ -4694,37 +5165,44 @@ blockquote, .blockquote {
                 weight: 400;
                 size: 14px;
             };
+
             &::placeholder {
                 transition: $transition;
                 color: $white-color;
             }
+
             &:focus {
                 &::placeholder {
                     color: transparent;
                 }
             }
         }
+
         textarea {
             height: auto !important;
             padding-top: 15px;
         }
+
         .comment-form-author {
             float: left;
             width: 50%;
             padding-right: 10px;
             margin-bottom: 20px;
         }
+
         .comment-form-email {
             float: left;
             width: 50%;
             padding-left: 12px;
             margin-bottom: 20px;
         }
+
         .comment-form-url {
             float: left;
             width: 100%;
             margin-bottom: 20px;
         }
+
         .comment-form-cookies-consent {
             width: 100%;
             float: left;
@@ -4734,11 +5212,13 @@ blockquote, .blockquote {
                 bottom: 20px;
                 top: 15px;
             };
+
             input {
                 position: absolute;
                 left: 0;
                 top: 7px;
             }
+
             label {
                 display: inline-block;
                 margin: 0;
@@ -4751,6 +5231,7 @@ blockquote, .blockquote {
                 };
             }
         }
+
         .form-submit {
             float: left;
             width: 100%;
@@ -4771,6 +5252,7 @@ blockquote, .blockquote {
                     weight: 300;
                     size: 14px;
                 };
+
                 &:hover, &:focus {
                     color: $white-color;
                     background-color: $main-color;
@@ -4790,11 +5272,13 @@ Contact CSS
             left: 0;
             right: 0;
         };
+
         .row {
             margin: {
                 left: 0;
                 right: 0;
             };
+
             .col-lg-7, .col-lg-5 {
                 padding: {
                     left: 0;
@@ -4804,6 +5288,7 @@ Contact CSS
         }
     }
 }
+
 .contact-content {
     width: 100%;
     height: 100%;
@@ -4815,6 +5300,7 @@ Contact CSS
         size: cover;
         repeat: no-repeat;
     };
+
     &::before {
         position: absolute;
         left: 0;
@@ -4826,6 +5312,7 @@ Contact CSS
         background-color: $black-color;
         opacity: 0.71;
     }
+
     .section-title {
         text-align: left;
         max-width: 455px;
@@ -4833,6 +5320,7 @@ Contact CSS
             bottom: 0;
             left: auto;
         };
+
         h2 {
             max-width: 330px;
             margin: {
@@ -4842,6 +5330,7 @@ Contact CSS
         }
     }
 }
+
 .contact-form {
     padding: {
         top: 120px;
@@ -4849,10 +5338,12 @@ Contact CSS
         left: 90px;
         right: 90px;
     };
+
     #contactForm {
         .default-btn {
             margin-top: 10px;
         }
+
         .with-errors {
             ul {
                 padding-left: 0;
@@ -4861,12 +5352,14 @@ Contact CSS
                     top: 10px;
                     bottom: 0;
                 };
+
                 li {
                     color: red;
                     font-size: 15px;
                 }
             }
         }
+
         #msgSubmit {
             margin-bottom: 0;
 
@@ -4895,9 +5388,11 @@ Instagram CSS
             size: 15px;
             weight: 300;
         };
+
         &:hover {
             color: $main-color;
         }
+
         i {
             position: absolute;
             left: 0;
@@ -4907,6 +5402,7 @@ Instagram CSS
         }
     }
 }
+
 .single-instagram-post {
     position: relative;
 
@@ -4919,6 +5415,7 @@ Instagram CSS
         height: 100%;
         z-index: 2;
     }
+
     i {
         position: absolute;
         left: 50%;
@@ -4935,8 +5432,9 @@ Instagram CSS
         visibility: hidden;
         transition: $transition;
         margin-top: 10px;
-        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
     }
+
     &:hover {
         i {
             margin-top: 0;
@@ -4953,6 +5451,7 @@ Footer CSS
     padding-top: 120px;
     background-color: $black-color;
 }
+
 .footer-content {
     text-align: center;
 
@@ -4963,12 +5462,14 @@ Footer CSS
             display: inline-block;
         }
     }
+
     .footer-contact-info {
         max-width: 400px;
         margin: {
             left: auto;
             right: auto;
         };
+
         ul {
             padding-left: 0;
             list-style-type: none;
@@ -4979,6 +5480,7 @@ Footer CSS
                 right: -20px;
                 bottom: -8px;
             };
+
             li {
                 flex: 0 0 50%;
                 max-width: 50%;
@@ -4991,10 +5493,12 @@ Footer CSS
                     right: 20px;
                     bottom: 8px;
                 };
+
                 &:first-child {
                     flex: 0 0 100%;
                     max-width: 100%;
                 }
+
                 i {
                     position: relative;
                     top: 4px;
@@ -5002,6 +5506,7 @@ Footer CSS
                     color: $main-color;
                     font-size: 20px;
                 }
+
                 a {
                     display: inline-block;
                     color: $white-color;
@@ -5013,6 +5518,7 @@ Footer CSS
             }
         }
     }
+
     .social {
         padding-left: 0;
         list-style-type: none;
@@ -5020,6 +5526,7 @@ Footer CSS
             top: 35px;
             bottom: 0;
         };
+
         li {
             display: inline-block;
             color: $white-color;
@@ -5030,6 +5537,7 @@ Footer CSS
             font: {
                 size: $font-size;
             };
+
             a {
                 display: inline-block;
                 position: relative;
@@ -5044,6 +5552,7 @@ Footer CSS
                     border-bottom: 2px dotted $main-color;
                     transition: $transition;
                 }
+
                 &:hover {
                     color: $main-color;
                 }
@@ -5051,6 +5560,7 @@ Footer CSS
         }
     }
 }
+
 .footer-bottom-area {
     position: relative;
     text-align: center;
@@ -5059,6 +5569,7 @@ Footer CSS
         top: 30px;
         bottom: 30px;
     };
+
     p {
         color: #a7a6a6;
         font-size: 15px;
@@ -5068,6 +5579,7 @@ Footer CSS
             position: relative;
             top: 2px;
         }
+
         a {
             display: inline-block;
             color: $white-color;
@@ -5077,6 +5589,7 @@ Footer CSS
             }
         }
     }
+
     .line {
         position: absolute;
         width: 100%;
@@ -5101,6 +5614,7 @@ Footer CSS
         }
     }
 }
+
 @keyframes run {
     0% {
         right: -50%;
@@ -5137,6 +5651,7 @@ Sidebar Eaxmple Demo CSS
             weight: 600;
             size: 13px;
         };
+
         span {
             writing-mode: vertical-rl;
             text-orientation: upright;
@@ -5145,12 +5660,14 @@ Sidebar Eaxmple Demo CSS
                 right: 5px;
             };
         }
+
         &:hover {
             color: $black-color;
             background-color: $white-color;
         }
     }
 }
+
 .example-demo-modal {
     position: fixed;
     overflow: hidden;
@@ -5175,6 +5692,7 @@ Sidebar Eaxmple Demo CSS
         &::-webkit-scrollbar {
             display: none;
         }
+
         ul {
             display: flex;
             flex-wrap: wrap;
@@ -5185,6 +5703,7 @@ Sidebar Eaxmple Demo CSS
                 right: -10px;
                 bottom: -20px;
             };
+
             li {
                 flex: 0 0 50%;
                 max-width: 50%;
@@ -5193,6 +5712,7 @@ Sidebar Eaxmple Demo CSS
                     right: 10px;
                     bottom: 20px;
                 };
+
                 .single-demo {
                     position: relative;
                     text-align: center;
@@ -5203,6 +5723,7 @@ Sidebar Eaxmple Demo CSS
                         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
                         border: 3px solid $white-color;
                     }
+
                     &::before {
                         content: '';
                         position: absolute;
@@ -5216,6 +5737,7 @@ Sidebar Eaxmple Demo CSS
                         visibility: hidden;
                         border-radius: 5px;
                     }
+
                     span {
                         position: absolute;
                         left: 0;
@@ -5234,6 +5756,7 @@ Sidebar Eaxmple Demo CSS
                             weight: 600;
                         };
                     }
+
                     .link-btn {
                         position: absolute;
                         left: 0;
@@ -5243,11 +5766,13 @@ Sidebar Eaxmple Demo CSS
                         display: block;
                         z-index: 3;
                     }
+
                     &:hover {
                         &::before {
                             opacity: 1;
                             visibility: visible;
                         }
+
                         span {
                             opacity: 1;
                             visibility: visible;
@@ -5258,6 +5783,7 @@ Sidebar Eaxmple Demo CSS
             }
         }
     }
+
     .header-title {
         position: absolute;
         background-color: $white-color;
@@ -5272,6 +5798,7 @@ Sidebar Eaxmple Demo CSS
             left: 30px;
             right: 30px;
         };
+
         .example-demo-modal-control {
             position: absolute;
             right: 25px;
@@ -5283,11 +5810,12 @@ Sidebar Eaxmple Demo CSS
             border: none;
             padding: 0;
             display: inline-block;
-    
+
             &:hover {
                 color: $main-color;
             }
         }
+
         .title {
             color: $black-color;
             margin-bottom: 0;
@@ -5297,6 +5825,7 @@ Sidebar Eaxmple Demo CSS
             };
         }
     }
+
     &.active {
         right: 0;
         opacity: 1;

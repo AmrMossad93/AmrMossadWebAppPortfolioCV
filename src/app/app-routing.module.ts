@@ -45,7 +45,16 @@ import { WorksDetailsComponent } from './components/pages/works-details/works-de
 import { BlogDetailsComponent } from './components/pages/blog-details/blog-details.component';
 
 const routes: Routes = [
-    {path: '', component: HomeOneComponent},
+    {
+        path: '',
+        redirectTo: 'main-page',
+        pathMatch: 'full'
+    },
+    {
+        path: 'main-page',
+        loadChildren: () => import('./Pages/main-page.module').then(c => c.MainPageModule)
+    },
+    {path: 'home', component: HomeOneComponent},
     {path: 'home-two', component: HomeTwoComponent},
     {path: 'home-three', component: HomeThreeComponent},
     {path: 'home-four', component: HomeFourComponent},
