@@ -1,0 +1,9 @@
+<div class="single-services-box">
+    <div class="icon">
+        <i [class]="icon"></i>
+    </div>
+    <h3>{{serviceName}}</h3>
+    <p>{{description}}</p>
+    <a *ngIf="route" [routerLink]="route" class="read-more-btn">Read More<i
+        class="ri-arrow-right-s-line"></i></a>
+</div>

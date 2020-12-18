@@ -668,82 +668,8 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-lg-4 col-sm-6 col-md-6">
-                        <div class="single-services-box">
-                            <div class="icon">
-                                <i class="flaticon-result"></i>
-                            </div>
-                            <h3>Business Research</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
-                            <a routerLink="/services-details" class="read-more-btn">Read More<i
-                                class="ri-arrow-right-s-line"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-sm-6 col-md-6">
-                        <div class="single-services-box">
-                            <div class="icon">
-                                <i class="flaticon-email"></i>
-                            </div>
-                            <h3>Email Marketing</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
-                            <a routerLink="/services-details" class="read-more-btn">Read More<i
-                                class="ri-arrow-right-s-line"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-sm-6 col-md-6">
-                        <div class="single-services-box">
-                            <div class="icon">
-                                <i class="flaticon-content"></i>
-                            </div>
-                            <h3>Informative Content</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
-                            <a routerLink="/services-details" class="read-more-btn">Read More<i
-                                class="ri-arrow-right-s-line"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-sm-6 col-md-6">
-                        <div class="single-services-box">
-                            <div class="icon">
-                                <i class="flaticon-education"></i>
-                            </div>
-                            <h3>Innovative Strategies</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
-                            <a routerLink="/services-details" class="read-more-btn">Read More<i
-                                class="ri-arrow-right-s-line"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-sm-6 col-md-6">
-                        <div class="single-services-box">
-                            <div class="icon">
-                                <i class="flaticon-analysis"></i>
-                            </div>
-                            <h3>Brand Identity</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
-                            <a routerLink="/services-details" class="read-more-btn">Read More<i
-                                class="ri-arrow-right-s-line"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-sm-6 col-md-6">
-                        <div class="single-services-box">
-                            <div class="icon">
-                                <i class="flaticon-team"></i>
-                            </div>
-                            <h3>Reputation Management</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
-                            <a routerLink="/services-details" class="read-more-btn">Read More<i
-                                class="ri-arrow-right-s-line"></i></a>
-                        </div>
+                    <div class="col-lg-4 col-sm-6 col-md-6" *ngFor="let service of serviceDetails">
+                       <app-services-card [serviceName]="service.serviceName" [description]="service.description" [icon]="service.icon"></app-services-card>
                     </div>
                 </div>
             </div>
