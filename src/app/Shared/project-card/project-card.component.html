@@ -1,0 +1,14 @@
+<div class="single-works-box">
+    <div class="works-image">
+        <img [src]="image" [alt]="projectName">
+        <div class="overlay"></div>
+        <a routerLink="/main-page/project-details/{{id}}" class="link-btn"></a>
+    </div>
+
+    <div class="works-content">
+        <h3><a routerLink="/main-page/project-details/{{id}}">{{projectName}}</a></h3>
+        <ul>
+            <li><a routerLink="/main-page/project-details/{{id}}">{{type}}</a></li>
+        </ul>
+    </div>
+</div>

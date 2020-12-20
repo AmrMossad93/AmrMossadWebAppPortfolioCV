@@ -639,8 +639,10 @@
                                     <div class="tabs-item">
                                         <div class="certification-area">
                                             <div class="row">
-                                                <div class="col-lg-4 col-md-4 col-sm-4 col-6" *ngFor="let cir of certification">
-                                                    <app-certification-card [imagePath]="cir.imagePath"></app-certification-card>
+                                                <div class="col-lg-4 col-md-4 col-sm-4 col-6"
+                                                     *ngFor="let cir of certification">
+                                                    <app-certification-card
+                                                        [imagePath]="cir.imagePath"></app-certification-card>
                                                 </div>
 
                                             </div>
@@ -669,7 +671,8 @@
 
                 <div class="row">
                     <div class="col-lg-4 col-sm-6 col-md-6" *ngFor="let service of serviceDetails">
-                       <app-services-card [serviceName]="service.serviceName" [description]="service.description" [icon]="service.icon"></app-services-card>
+                        <app-services-card [serviceName]="service.serviceName" [description]="service.description"
+                                           [icon]="service.icon"></app-services-card>
                     </div>
                 </div>
             </div>
@@ -683,94 +686,9 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                        <div class="single-works-box">
-                            <div class="works-image">
-                                <img src="assets/img/works/img1.jpg" alt="image">
-                                <div class="overlay"></div>
-                                <a routerLink="/works-details" class="link-btn"></a>
-                            </div>
-
-                            <div class="works-content">
-                                <h3><a routerLink="/works-details">Festival Banner</a></h3>
-                                <ul>
-                                    <li><a href="#">Web</a></li>
-                                    <li><a href="#">Banner</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-8 col-md-8 col-sm-12">
-                        <div class="single-works-box">
-                            <div class="works-image">
-                                <img src="assets/img/works/img2.jpg" alt="image">
-                                <div class="overlay"></div>
-                                <a routerLink="/works-details" class="link-btn"></a>
-                            </div>
-
-                            <div class="works-content">
-                                <h3><a routerLink="/works-details">Book Cover Presentation</a></h3>
-                                <ul>
-                                    <li><a href="#">Design</a></li>
-                                    <li><a href="#">Book</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-works-box">
-                            <div class="works-image">
-                                <img src="assets/img/works/img3.jpg" alt="image">
-                                <div class="overlay"></div>
-                                <a routerLink="/works-details" class="link-btn"></a>
-                            </div>
-
-                            <div class="works-content">
-                                <h3><a routerLink="/works-details">Poster Vector</a></h3>
-                                <ul>
-                                    <li><a href="#">HTML</a></li>
-                                    <li><a href="#">CSS</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-works-box">
-                            <div class="works-image">
-                                <img src="assets/img/works/img4.jpg" alt="image">
-                                <div class="overlay"></div>
-                                <a routerLink="/works-details" class="link-btn"></a>
-                            </div>
-
-                            <div class="works-content">
-                                <h3><a routerLink="/works-details">Content Writing</a></h3>
-                                <ul>
-                                    <li><a href="#">Web</a></li>
-                                    <li><a href="#">Text</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-0 offset-md-3 offset-sm-3">
-                        <div class="single-works-box">
-                            <div class="works-image">
-                                <img src="assets/img/works/img5.jpg" alt="image">
-                                <div class="overlay"></div>
-                                <a routerLink="/works-details" class="link-btn"></a>
-                            </div>
-
-                            <div class="works-content">
-                                <h3><a routerLink="/works-details">Digital Marketing</a></h3>
-                                <ul>
-                                    <li><a href="#">Web</a></li>
-                                    <li><a href="#">HTML</a></li>
-                                </ul>
-                            </div>
-                        </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12" *ngFor="let project of projects">
+                        <app-project-card [image]="project.images[0]" [id]="project.id"
+                                          [projectName]="project.projectName" [type]="project.type"></app-project-card>
                     </div>
                 </div>
             </div>
@@ -846,7 +764,7 @@
 
                 <div class="row">
                     <div class="col-lg-3 col-md-4 col-sm-6 col-6" *ngFor="let cl of client">
-                       <app-client-card [name]="cl.name" [image]="cl.imgPath" [url]="cl.url"></app-client-card>
+                        <app-client-card [name]="cl.name" [image]="cl.imgPath" [url]="cl.url"></app-client-card>
                     </div>
                 </div>
             </div>

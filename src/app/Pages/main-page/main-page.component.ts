@@ -11,6 +11,8 @@ import {ServiceDetailsService} from '../../Services/service-details.service';
 import {IServiceDetails} from '../../Models/service-details';
 import {ClientService} from '../../Services/client.service';
 import {IClient} from '../../Models/client';
+import {ProjectsService} from '../../Services/projects.service';
+import {IProject} from '../../Models/project';
 
 @Component({
     selector: 'app-main-page',
@@ -24,6 +26,7 @@ export class MainPageComponent implements OnInit {
     certification: ICertification[];
     serviceDetails: IServiceDetails[];
     client: IClient[];
+    projects: IProject[];
 
     constructor(
         private programmingSkillsService: ProgrammingSkillsService,
@@ -31,6 +34,7 @@ export class MainPageComponent implements OnInit {
         private experienceService: ExperienceService,
         private educationService: EducationService,
         private clientsService: ClientService,
+        private projectsService: ProjectsService,
         private serviceDetailsService: ServiceDetailsService
     ) {
     }
@@ -42,6 +46,7 @@ export class MainPageComponent implements OnInit {
         this.getCertifications();
         this.getMyServices();
         this.getMyClients();
+        this.getMyProjects();
     }
 
     getProgrammingSkillsDetails() {
@@ -77,6 +82,12 @@ export class MainPageComponent implements OnInit {
     getMyClients() {
         this.clientsService.getClients().subscribe(res => {
             this.client = res as IClient[];
+        });
+    }
+
+    getMyProjects() {
+        this.projectsService.getProjects().subscribe(res => {
+            this.projects = res as IProject[];
         });
     }
 }
