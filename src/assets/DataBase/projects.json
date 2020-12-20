@@ -1,10 +1,218 @@
 [
     {
+        "id": 25,
+        "projectName": "ClassTech Public Site",
+        "type": "Web",
+        "images": [
+            "assets/img/Me/Projects/ClassTechPublic.png"
+        ]
+    },
+    {
+        "id": 26,
+        "projectName": "ClassTech Admin Panel",
+        "type": "Web",
+        "images": [
+            "assets/img/Me/Projects/ClassTechAdminPanel.jpg"
+        ]
+    },
+    {
+        "id": 27,
+        "projectName": "Personal Exam Module",
+        "type": "Web",
+        "images": [
+            "assets/img/Me/Projects/Personal.png"
+        ]
+    },
+    {
+        "id": 28,
+        "projectName": "School Exam Module",
+        "type": "Web",
+        "images": [
+            "assets/img/Me/Projects/School Unilearn.png"
+        ]
+    },
+    {
+        "id": 20,
+        "projectName": "Grand Electronic Public Site",
+        "type": "Web",
+        "images": [
+            "assets/img/Me/Projects/GrandPublicSite.jpg"
+        ]
+    },
+    {
+        "id": 21,
+        "projectName": "Grand Electronic Admin Panel",
+        "type": "Web",
+        "images": [
+            "assets/img/Me/Projects/GrandAdminPanel.jpg"
+        ]
+    },
+    {
+        "id": 23,
+        "projectName": "Lotfy Group Public Site",
+        "type": "Web",
+        "images": [
+            "assets/img/Me/Projects/LgPublic.png"
+        ]
+    },
+    {
+        "id": 24,
+        "projectName": "Lotfy Group Admin Panel",
+        "type": "Web",
+        "images": [
+            "assets/img/Me/Projects/LGAdmin.png"
+        ]
+    },
+    {
         "id": 1,
         "projectName": "COVID-19 Tracker",
         "type": "Web",
         "images": [
             "assets/img/Me/Projects/COVID-19-Tracker.png"
+        ]
+    },
+    {
+        "id": 2,
+        "projectName": "HR Module",
+        "type": "Web",
+        "images": [
+            "assets/img/Me/Projects/HR.png"
+        ]
+    },
+    {
+        "id": 3,
+        "projectName": "M.A.S.A. Development",
+        "type": "Web",
+        "images": [
+            "assets/img/Me/Projects/MASA Project.png"
+        ]
+    },
+    {
+        "id": 4,
+        "projectName": "Digital Upstricke",
+        "type": "Web",
+        "images": [
+            "assets/img/Me/Projects/UpStricke.png"
+        ]
+    },
+    {
+        "id": 5,
+        "projectName": "SYNDICATE OF ARTIST'S",
+        "type": "Web",
+        "images": [
+            "assets/img/Me/Projects/ESA.jpg"
+        ]
+    },
+    {
+        "id": 6,
+        "projectName": "PUBG",
+        "type": "Web",
+        "images": [
+            "assets/img/Me/Projects/PUBG.jpg"
+        ]
+    },
+    {
+        "id": 7,
+        "projectName": "EMD4IT Official WebSite",
+        "type": "Web",
+        "images": [
+            "assets/img/Me/Projects/EMD4IT.png"
+        ]
+    },
+    {
+        "id": 8,
+        "projectName": "Agency Template",
+        "type": "Web",
+        "images": [
+            "assets/img/Me/Projects/Template !.png"
+        ]
+    },
+    {
+        "id": 9,
+        "projectName": "Clock",
+        "type": "Web",
+        "images": [
+            "assets/img/Me/Projects/Clock.png"
+        ]
+    },
+    {
+        "id": 10,
+        "projectName": "Single Page",
+        "type": "Web",
+        "images": [
+            "assets/img/Me/Projects/SingleWebsite.jpg"
+        ]
+    },
+    {
+        "id": 11,
+        "projectName": "School",
+        "type": "Web",
+        "images": [
+            "assets/img/Me/Projects/School.png"
+        ]
+    },
+    {
+        "id": 12,
+        "projectName": "Movie",
+        "type": "Web",
+        "images": [
+            "assets/img/Me/Projects/Joker.png"
+        ]
+    },
+    {
+        "id": 13,
+        "projectName": "Coffee Shop",
+        "type": "Web",
+        "images": [
+            "assets/img/Me/Projects/Cofee.jpg"
+        ]
+    },
+    {
+        "id": 14,
+        "projectName": "School Management",
+        "type": "Web",
+        "images": [
+            "assets/img/Me/Projects/school-managment.png"
+        ]
+    },
+    {
+        "id": 15,
+        "projectName": "Insurance",
+        "type": "Web",
+        "images": [
+            "assets/img/Me/Projects/wordpress-insurance-themes.jpg"
+        ]
+    },
+    {
+        "id": 16,
+        "projectName": "Calculator",
+        "type": "Web",
+        "images": [
+            "assets/img/Me/Projects/Calculator.png"
+        ]
+    },
+    {
+        "id": 17,
+        "projectName": "Scroll Bar",
+        "type": "Web",
+        "images": [
+            "assets/img/Me/Projects/Scroll-Progress-Bar.png"
+        ]
+    },
+    {
+        "id": 18,
+        "projectName": "CheckBox",
+        "type": "Web",
+        "images": [
+            "assets/img/Me/Projects/Glowing-Light-Custom-Checkbox.png"
+        ]
+    },
+    {
+        "id": 19,
+        "projectName": "HR",
+        "type": "Web",
+        "images": [
+            "assets/img/Me/Projects/convex-1024x679.jpg"
         ]
     }
 ]
