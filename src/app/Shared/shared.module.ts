@@ -6,16 +6,18 @@ import { EducationCardComponent } from './education-card/education-card.componen
 import { CertificationCardComponent } from './certification-card/certification-card.component';
 import { ServicesCardComponent } from './services-card/services-card.component';
 import {RouterModule} from '@angular/router';
+import { ClientCardComponent } from './client-card/client-card.component';
 
 
 
 @NgModule({
-    declarations: [ProgressBarComponent, ExperienceCardComponent, EducationCardComponent, CertificationCardComponent, ServicesCardComponent],
+    declarations: [ProgressBarComponent, ExperienceCardComponent, EducationCardComponent, CertificationCardComponent, ServicesCardComponent, ClientCardComponent],
     exports: [
         ExperienceCardComponent,
         EducationCardComponent,
         CertificationCardComponent,
-        ServicesCardComponent
+        ServicesCardComponent,
+        ClientCardComponent
     ],
     imports: [
         CommonModule,

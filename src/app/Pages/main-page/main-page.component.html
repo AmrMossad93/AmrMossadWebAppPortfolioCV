@@ -845,68 +845,8 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                        <div class="single-clients">
-                            <a href="#">
-                                <img src="assets/img/clients/img1.png" alt="image">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                        <div class="single-clients">
-                            <a href="#">
-                                <img src="assets/img/clients/img2.png" alt="image">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                        <div class="single-clients">
-                            <a href="#">
-                                <img src="assets/img/clients/img3.png" alt="image">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                        <div class="single-clients">
-                            <a href="#">
-                                <img src="assets/img/clients/img4.png" alt="image">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                        <div class="single-clients">
-                            <a href="#">
-                                <img src="assets/img/clients/img5.png" alt="image">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                        <div class="single-clients">
-                            <a href="#">
-                                <img src="assets/img/clients/img6.png" alt="image">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                        <div class="single-clients">
-                            <a href="#">
-                                <img src="assets/img/clients/img7.png" alt="image">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                        <div class="single-clients">
-                            <a href="#">
-                                <img src="assets/img/clients/img8.png" alt="image">
-                            </a>
-                        </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6" *ngFor="let cl of client">
+                       <app-client-card [name]="cl.name" [image]="cl.imgPath" [url]="cl.url"></app-client-card>
                     </div>
                 </div>
             </div>
