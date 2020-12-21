@@ -142,6 +142,7 @@
         "coreDevelopment": "HTML5 , CSS3 , Angular 9 , Bootstrap 4, TypeScript , Fontawsome, PrimeNg",
         "client": "Lotfy Group",
         "category": "CMS",
+        "webSiteURL": "http://admin.lotfygrouplg.com/",
         "type": "Web",
         "images": [
             "assets/img/Me/Projects/LGAdmin.png",
@@ -156,9 +157,17 @@
     {
         "id": 9,
         "projectName": "COVID-19 Tracker",
+        "projectDetail": "It Was COVID-19 Tracker To Get The Count Of Infected , Recovered ANd Deaths Poeple",
+        "coreDevelopment": "HTML5 , CSS3 , Angular 9 , Bootstrap 4, TypeScript , Fontawsome, PrimeNg",
+        "client": "EMD4IT",
+        "category": "Medical",
+        "webSiteURL": "http://covid-19.emd4it.com/",
         "type": "Web",
         "images": [
-            "assets/img/Me/Projects/COVID-19-Tracker.png"
+            "assets/img/Me/Projects/COVID-19-Tracker.png",
+            "assets/img/Me/Projects/Covid-19/1.png",
+            "assets/img/Me/Projects/Covid-19/2.png",
+            "assets/img/Me/Projects/Covid-19/3.png"
         ],
         "vedioUrl": null
     },
