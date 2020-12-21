@@ -21,12 +21,12 @@
     },
     {
         "name": "Grand Electronics",
-        "imgPath": "assets/img/Me/clients/EMD4IT.png",
+        "imgPath": "assets/img/Me/clients/Grand Logo.png",
         "url": "https://grand-electronic-eg.com/"
     },
     {
         "name": "EMD4IT",
-        "imgPath": "assets/img/Me/clients/Grand Logo.png",
+        "imgPath": "assets/img/Me/clients/EMD4IT.png",
         "url": "http://emd4it.com/"
     }
 ]

@@ -1,218 +1,327 @@
 [
     {
-        "id": 25,
+        "id": 1,
         "projectName": "ClassTech Public Site",
+        "projectDetail": "It Was The Portfolio For ClassTech Company To Know The ClassTech Details News , Features , Contact And Choose A A Request To Use There Apps.",
         "type": "Web",
+        "coreDevelopment": "HTML5 , CSS3 , Angular 10 , PrimgNg , Bootstrap , TypeScript , Fontawsome , Material Icons",
+        "client": "UniLearn Egypt",
+        "category": "Education",
+        "webSiteURL": "https://classtechonline.com/",
         "images": [
-            "assets/img/Me/Projects/ClassTechPublic.png"
-        ]
+            "assets/img/Me/Projects/ClassTechPublic.png",
+            "assets/img/Me/Projects/ClasstechPublicSite/1.png",
+            "assets/img/Me/Projects/ClasstechPublicSite/2.png"
+        ],
+        "vedioUrl": null
     },
     {
-        "id": 26,
+        "id": 2,
         "projectName": "ClassTech Admin Panel",
         "type": "Web",
+        "projectDetail": "It Was The Admin Panel For ClassTech Company To Contact With The Request Of The Clients And May Add News And May Configure New Features.",
+        "coreDevelopment": "HTML5 , CSS3 , Angular 10 , PrimgNg , Bootstrap 4, TypeScript , Fontawsome , Material Icons",
+        "client": "UniLearn Egypt",
+        "category": "Education",
+        "webSiteURL": "https://uniadmin.classtechonline.com/",
         "images": [
-            "assets/img/Me/Projects/ClassTechAdminPanel.jpg"
-        ]
+            "assets/img/Me/Projects/ClassTechAdminPanel.jpg",
+            "assets/img/Me/Projects/ClassTechAdminPanel/1.png",
+            "assets/img/Me/Projects/ClassTechAdminPanel/2.png",
+            "assets/img/Me/Projects/ClassTechAdminPanel/3.png"
+        ],
+        "vedioUrl": null
     },
     {
-        "id": 27,
+        "id": 3,
         "projectName": "Personal Exam Module",
         "type": "Web",
+        "projectDetail": "It Was An Exam Module Which Teacher May Create Exams To Students And Get Reports To Evaluate His Students.",
+        "coreDevelopment": "HTML5 , CSS3 , Angular 10 , PrimgNg , Bootstrap 4, TypeScript , Fontawsome , Material Icons",
+        "client": "UniLearn Egypt",
+        "category": "Education",
+        "webSiteURL": "https://pilotpersonal.classtechonline.com/",
         "images": [
-            "assets/img/Me/Projects/Personal.png"
-        ]
+            "assets/img/Me/Projects/Personal.png",
+            "assets/img/Me/Projects/Personal/1.png",
+            "assets/img/Me/Projects/Personal/2.png",
+            "assets/img/Me/Projects/Personal/3.png",
+            "assets/img/Me/Projects/Personal/4.png",
+            "assets/img/Me/Projects/Personal/5.png",
+            "assets/img/Me/Projects/Personal/6.png",
+            "assets/img/Me/Projects/Personal/7.png",
+            "assets/img/Me/Projects/Personal/8.png",
+            "assets/img/Me/Projects/Personal/9.png",
+            "assets/img/Me/Projects/Personal/10.png"
+        ],
+        "vedioUrl": null
     },
     {
-        "id": 28,
+        "id": 4,
         "projectName": "School Exam Module",
         "type": "Web",
+        "projectDetail": "It Was A School Application That The Headmaster May Add Teacher , Students , Parent And The Teacher Can Create Exams To Evaluate The Students And Parents May Know Their Children Details.",
+        "coreDevelopment": "HTML5 , CSS3 , Angular 11 , PrimgNg , Bootstrap 4, TypeScript , Fontawsome , Material Icons",
+        "client": "UniLearn Egypt",
+        "category": "Education",
+        "webSiteURL": "https://pilotschool.classtechonline.com/",
         "images": [
+            "assets/img/Me/Projects/School Unilearn.png",
+            "assets/img/Me/Projects/School Unilearn.png",
+            "assets/img/Me/Projects/School Unilearn.png",
+            "assets/img/Me/Projects/School Unilearn.png",
+            "assets/img/Me/Projects/School Unilearn.png",
+            "assets/img/Me/Projects/School Unilearn.png",
+            "assets/img/Me/Projects/School Unilearn.png",
+            "assets/img/Me/Projects/School Unilearn.png",
+            "assets/img/Me/Projects/School Unilearn.png",
             "assets/img/Me/Projects/School Unilearn.png"
-        ]
+        ],
+        "vedioUrl": null
     },
     {
-        "id": 20,
+        "id": 5,
         "projectName": "Grand Electronic Public Site",
+        "projectDetail": "It Was A Public Site For Grand Electronics Which Can View The Products For The Company And The User May Order And Contact With The Company.",
+        "coreDevelopment": "HTML5 , CSS3 , Angular 9 , Bootstrap 4, TypeScript , Fontawsome",
+        "client": "Grand Electronics",
+        "category": "CMS",
+        "webSiteURL": "https://grand-electronic-eg.com/",
         "type": "Web",
         "images": [
-            "assets/img/Me/Projects/GrandPublicSite.jpg"
-        ]
+            "assets/img/Me/Projects/GrandPublicSite.jpg",
+            "assets/img/Me/Projects/GrandPublic/1.png",
+            "assets/img/Me/Projects/GrandPublic/2.jpg",
+            "assets/img/Me/Projects/GrandPublic/3.png"
+        ],
+        "vedioUrl": null
     },
     {
-        "id": 21,
+        "id": 6,
         "projectName": "Grand Electronic Admin Panel",
+        "projectDetail": "It Was The Admin Panel For Grand Electronics Which Can The Company Can Control The Public Site And Add Products To It.",
+        "coreDevelopment": "HTML5 , CSS3 , Angular 9 , Bootstrap 4, TypeScript , Fontawsome, PrimeNg",
+        "client": "Grand Electronics",
+        "category": "CMS",
+        "webSiteURL": "https://grand-electronic-eg.com/",
         "type": "Web",
         "images": [
-            "assets/img/Me/Projects/GrandAdminPanel.jpg"
-        ]
+            "assets/img/Me/Projects/GrandAdminPanel.jpg",
+            "assets/img/Me/Projects/GrandAdmin/1.png",
+            "assets/img/Me/Projects/GrandAdmin/2.png",
+            "assets/img/Me/Projects/GrandAdmin/3.png",
+            "assets/img/Me/Projects/GrandAdmin/4.png",
+            "assets/img/Me/Projects/GrandAdmin/5.png"
+        ],
+        "vedioUrl": null
     },
     {
-        "id": 23,
+        "id": 7,
         "projectName": "Lotfy Group Public Site",
+        "projectDetail": "It Was A Public Site For Lotfy Group Which Can View The Products For The Company And The User May Order And Contact With The Company.",
+        "coreDevelopment": "HTML5 , CSS3 , Angular 9 , Bootstrap 4, TypeScript , Fontawsome",
+        "client": "Lotfy Group",
+        "category": "CMS",
+        "webSiteURL": "http://lotfygrouplg.com/",
         "type": "Web",
         "images": [
-            "assets/img/Me/Projects/LgPublic.png"
-        ]
+            "assets/img/Me/Projects/LgPublic.png",
+            "assets/img/Me/Projects/LgPublic/1.jpg",
+            "assets/img/Me/Projects/LgPublic/2.jpg",
+            "assets/img/Me/Projects/LgPublic/3.jpg",
+            "assets/img/Me/Projects/LgPublic/4.jpg",
+            "assets/img/Me/Projects/LgPublic/5.jpg",
+            "assets/img/Me/Projects/LgPublic/6.jpg"
+        ],
+        "vedioUrl": null
     },
     {
-        "id": 24,
+        "id": 8,
         "projectName": "Lotfy Group Admin Panel",
+        "projectDetail": "It Was The Admin Panel For Lotfy Group Which Can The Company Can Control The Public Site And Add Products To It.",
+        "coreDevelopment": "HTML5 , CSS3 , Angular 9 , Bootstrap 4, TypeScript , Fontawsome, PrimeNg",
+        "client": "Lotfy Group",
+        "category": "CMS",
         "type": "Web",
         "images": [
-            "assets/img/Me/Projects/LGAdmin.png"
-        ]
+            "assets/img/Me/Projects/LGAdmin.png",
+            "assets/img/Me/Projects/LgAdmin/1.jpg",
+            "assets/img/Me/Projects/LgAdmin/2.png",
+            "assets/img/Me/Projects/LgAdmin/3.png",
+            "assets/img/Me/Projects/LgAdmin/4.png",
+            "assets/img/Me/Projects/LgAdmin/5.png"
+        ],
+        "vedioUrl": null
     },
     {
-        "id": 1,
+        "id": 9,
         "projectName": "COVID-19 Tracker",
         "type": "Web",
         "images": [
             "assets/img/Me/Projects/COVID-19-Tracker.png"
-        ]
+        ],
+        "vedioUrl": null
     },
     {
-        "id": 2,
+        "id": 10,
         "projectName": "HR Module",
         "type": "Web",
         "images": [
             "assets/img/Me/Projects/HR.png"
-        ]
+        ],
+        "vedioUrl": null
     },
     {
-        "id": 3,
+        "id": 11,
         "projectName": "M.A.S.A. Development",
         "type": "Web",
         "images": [
             "assets/img/Me/Projects/MASA Project.png"
-        ]
+        ],
+        "vedioUrl": null
     },
     {
-        "id": 4,
+        "id": 12,
         "projectName": "Digital Upstricke",
         "type": "Web",
         "images": [
             "assets/img/Me/Projects/UpStricke.png"
-        ]
+        ],
+        "vedioUrl": null
     },
     {
-        "id": 5,
+        "id": 13,
         "projectName": "SYNDICATE OF ARTIST'S",
         "type": "Web",
         "images": [
             "assets/img/Me/Projects/ESA.jpg"
-        ]
+        ],
+        "vedioUrl": null
     },
     {
-        "id": 6,
+        "id": 14,
         "projectName": "PUBG",
         "type": "Web",
         "images": [
             "assets/img/Me/Projects/PUBG.jpg"
-        ]
+        ],
+        "vedioUrl": null
     },
     {
-        "id": 7,
+        "id": 15,
         "projectName": "EMD4IT Official WebSite",
         "type": "Web",
         "images": [
             "assets/img/Me/Projects/EMD4IT.png"
-        ]
+        ],
+        "vedioUrl": null
     },
     {
-        "id": 8,
+        "id": 16,
         "projectName": "Agency Template",
         "type": "Web",
         "images": [
             "assets/img/Me/Projects/Template !.png"
-        ]
+        ],
+        "vedioUrl": null
     },
     {
-        "id": 9,
+        "id": 17,
         "projectName": "Clock",
         "type": "Web",
         "images": [
             "assets/img/Me/Projects/Clock.png"
-        ]
+        ],
+        "vedioUrl": null
     },
     {
-        "id": 10,
+        "id": 18,
         "projectName": "Single Page",
         "type": "Web",
         "images": [
             "assets/img/Me/Projects/SingleWebsite.jpg"
-        ]
+        ],
+        "vedioUrl": null
     },
     {
-        "id": 11,
+        "id": 19,
         "projectName": "School",
         "type": "Web",
         "images": [
             "assets/img/Me/Projects/School.png"
-        ]
+        ],
+        "vedioUrl": null
     },
     {
-        "id": 12,
+        "id": 20,
         "projectName": "Movie",
         "type": "Web",
         "images": [
             "assets/img/Me/Projects/Joker.png"
-        ]
+        ],
+        "vedioUrl": null
     },
     {
-        "id": 13,
+        "id": 21,
         "projectName": "Coffee Shop",
         "type": "Web",
         "images": [
             "assets/img/Me/Projects/Cofee.jpg"
-        ]
+        ],
+        "vedioUrl": null
     },
     {
-        "id": 14,
+        "id": 22,
         "projectName": "School Management",
         "type": "Web",
         "images": [
             "assets/img/Me/Projects/school-managment.png"
-        ]
+        ],
+        "vedioUrl": null
     },
     {
-        "id": 15,
+        "id": 23,
         "projectName": "Insurance",
         "type": "Web",
         "images": [
             "assets/img/Me/Projects/wordpress-insurance-themes.jpg"
-        ]
+        ],
+        "vedioUrl": null
     },
     {
-        "id": 16,
+        "id": 24,
         "projectName": "Calculator",
         "type": "Web",
         "images": [
             "assets/img/Me/Projects/Calculator.png"
-        ]
+        ],
+        "vedioUrl": null
     },
     {
-        "id": 17,
+        "id": 25,
         "projectName": "Scroll Bar",
         "type": "Web",
         "images": [
             "assets/img/Me/Projects/Scroll-Progress-Bar.png"
-        ]
+        ],
+        "vedioUrl": null
     },
     {
-        "id": 18,
+        "id": 26,
         "projectName": "CheckBox",
         "type": "Web",
         "images": [
             "assets/img/Me/Projects/Glowing-Light-Custom-Checkbox.png"
-        ]
+        ],
+        "vedioUrl": null
     },
     {
-        "id": 19,
+        "id": 27,
         "projectName": "HR",
         "type": "Web",
         "images": [
             "assets/img/Me/Projects/convex-1024x679.jpg"
-        ]
+        ],
+        "vedioUrl": null
     }
 ]
