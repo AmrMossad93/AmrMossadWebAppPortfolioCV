@@ -94,8 +94,11 @@
 <!--                                        <li><a href="#" target="_blank"><i class="ri-linkedin-fill"></i></a></li>-->
 <!--                                    </ul>-->
 <!--                                </div>-->
-
-                                <div class="single-info-box">
+                                <div  *ngIf="!project?.webSiteURL" class="single-info-box">
+                                    <h4>Sorry!</h4>
+                                    <span>This App Is Not Finished From The Company Yet</span>
+                                </div>
+                                <div class="single-info-box" *ngIf="project?.webSiteURL">
                                     <a [href]="project?.webSiteURL" class="default-btn" target="_blank">Live Preview</a>
                                 </div>
                             </div>

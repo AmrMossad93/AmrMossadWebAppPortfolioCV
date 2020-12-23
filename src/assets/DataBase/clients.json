@@ -25,8 +25,18 @@
         "url": "https://grand-electronic-eg.com/"
     },
     {
+        "name": "New Gizaa",
+        "imgPath": "assets/img/Me/clients/newGiza.png",
+        "url": "http://newgiza.com/"
+    },
+    {
         "name": "EMD4IT",
         "imgPath": "assets/img/Me/clients/EMD4IT.png",
         "url": "http://emd4it.com/"
+    },
+    {
+        "name": "SEEN Solutions",
+        "imgPath": "assets/img/Me/clients/seen.png",
+        "url": "https://www.seen.solutions/"
     }
 ]
